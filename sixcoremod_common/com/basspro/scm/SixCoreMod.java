@@ -4,6 +4,7 @@ import com.basspro.scm.block.SixCoreModBlocks;
 import com.basspro.scm.core.proxy.CommonProxySixCoreMod;
 import com.basspro.scm.item.SixCoreModItems;
 import com.basspro.scm.lib.Reference;
+import com.basspro.scm.recipe.RecipesSixCoreMod;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
@@ -43,6 +44,11 @@ public class SixCoreMod {
 
         // Items
         SixCoreModItems.loadItems();
+        
+        // Recipes
+        RecipesSixCoreMod.loadRecipes();
+        
+        
 
     }
 }
