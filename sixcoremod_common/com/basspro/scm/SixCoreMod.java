@@ -36,17 +36,17 @@ public class SixCoreMod {
 
     @Init
     private void load(FMLInitializationEvent event) {
-        // SkyCraftBlocks contains all the blocks + block code
+        // Blocks
         SixCoreModBlocks.loadBlocks();
 
-        // SkyCraftItems contains all the items + item code
+        // Items
         SixCoreModItems.loadItems();
 
-        // SkyCraftOres contains all the ores + ore code
+        // Ores
         SixCoreModOres.loadOres();
 
-        // SkyCraftItems contains all the recipes + recipe code
+        // Recipes
         SixCoreModRecipes.loadRecipies();
 
-    }
+    }}
 }
