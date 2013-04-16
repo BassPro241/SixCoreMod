@@ -10,6 +10,7 @@ public class Strings {
     
 
     /* Item name constants */
-    
+    public static final String PORK_SANDWICH_NAME = "porkSandwich";
+    public static final String FISH_SANDWICH_NAME = "fishSandwich";
 
 }

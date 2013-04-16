@@ -14,6 +14,8 @@ public class Textures {
     public static final String VANILLA_ITEM_TEXTURE_SHEET = "/gui/items.png";
     public static final String VANILLA_BLOCK_TEXTURE_SHEET = "/terrain.png";
     
-    
+    // Item Textures
+    public static final String ITEM_PORK_SANDWICH = ITEM_TEXTURE_LOCATION + "porkBurger.png";
+    public static final String ITEM_FISH_SANDWICH = ITEM_TEXTURE_LOCATION + "fishBurger.png";
     
 }

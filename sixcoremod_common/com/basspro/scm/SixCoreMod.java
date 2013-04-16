@@ -1,7 +1,10 @@
 package com.basspro.scm;
 
+import net.minecraft.creativetab.CreativeTabs;
+
 import com.basspro.scm.block.SixCoreModBlocks;
 import com.basspro.scm.core.proxy.CommonProxySixCoreMod;
+import com.basspro.scm.creativetab.TabSixCoreItem;
 import com.basspro.scm.item.SixCoreModItems;
 import com.basspro.scm.lib.Reference;
 import com.basspro.scm.recipe.RecipesSixCoreMod;
@@ -23,8 +26,9 @@ public class SixCoreMod {
 
     // public static CreativeTabs tabSixCoreModBlocks = new
     // TabSixCoreModBlocks(CreativeTabs.getNextID(), "Six Core Blocks");
-    // public static CreativeTabs tabSSixCoreModItems = new
-    // TabSixCoreModItems(CreativeTabs.getNextID(), "Six Core Items");
+    
+    public static CreativeTabs tabSixCoreItems = new TabSixCoreItem(CreativeTabs.getNextID(), "Six Core Items");
+    
     // public static CreativeTabs tabSixCoreModArmor = new
     // TabSixCoreModArmor(CreativeTabs.getNextID(), "Six Core Armor");
     // public static CreativeTabs tabSixCoreModTools = new
@@ -40,13 +44,13 @@ public class SixCoreMod {
     @Init
     private void load(FMLInitializationEvent event) {
         // Blocks
-        SixCoreModBlocks.loadBlocks();
+        SixCoreModBlocks.init();
 
         // Items
-        SixCoreModItems.loadItems();
+        SixCoreModItems.init();
         
         // Recipes
-        RecipesSixCoreMod.loadRecipes();
+        RecipesSixCoreMod.init();
         
         
 
