@@ -7,7 +7,8 @@ import com.basspro.scm.item.SixCoreModItems;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 
-public class RecipesSixCoreMod {
+public class RecipesSixCoreMod
+{
 
     static ItemStack dyeStack = new ItemStack(Item.dyePowder, 1, 3);
     static ItemStack wheatStack = new ItemStack(Item.wheat);
@@ -27,12 +28,13 @@ public class RecipesSixCoreMod {
     // ItemStack onyxStack = new ItemStack(ingotOnyx);
     // ItemStack bronzeStack = new ItemStack(ingotBronze);
 
-    public static void init() {
+    public static void init()
+    {
 
-        GameRegistry.addRecipe(new ItemStack(SixCoreModItems.porkSandwich), "B", "P", "B", 'B',
-                breadStack, 'P', cookedporkStack);
-        GameRegistry.addRecipe(new ItemStack(SixCoreModItems.fishSandwich), "B", "F", "B", 'B',
-                breadStack, 'F', cookedfishStack);
+        GameRegistry.addRecipe(new ItemStack(SixCoreModItems.porkSandwich),
+                "B", "P", "B", 'B', breadStack, 'P', cookedporkStack);
+        GameRegistry.addRecipe(new ItemStack(SixCoreModItems.fishSandwich),
+                "B", "F", "B", 'B', breadStack, 'F', cookedfishStack);
 
     }
 

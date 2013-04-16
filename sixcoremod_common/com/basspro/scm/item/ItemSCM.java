@@ -8,20 +8,24 @@ import com.basspro.scm.lib.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class ItemSCM extends Item {
+public class ItemSCM extends Item
+{
 
-    public ItemSCM(int id) {
+    public ItemSCM(int id)
+    {
 
-        super(id - Reference.SHIFTED_ID_RANGE_CORRECTION);
+        super(id /* - Reference.SHIFTED_ID_RANGE_CORRECTION*/ );
         maxStackSize = 1;
         setNoRepair();
 
     }
 
+    @Override
     @SideOnly(Side.CLIENT)
-    public void registerIcons(IconRegister iconRegister) {
+    public void registerIcons(IconRegister iconRegister)
+    {
 
-        iconIndex = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase()
+        itemIcon = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase()
                 + ":"
                 + this.getUnlocalizedName().substring(
                         this.getUnlocalizedName().indexOf(".") + 1));

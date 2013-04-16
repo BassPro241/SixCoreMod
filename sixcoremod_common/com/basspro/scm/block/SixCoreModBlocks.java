@@ -1,8 +1,10 @@
 package com.basspro.scm.block;
 
-public class SixCoreModBlocks {
+public class SixCoreModBlocks
+{
 
-    public static void init() {
+    public static void init()
+    {
 
     }
 

@@ -2,16 +2,15 @@ package com.basspro.scm.item;
 
 import com.basspro.scm.SixCoreMod;
 
+public class ItemFoodSandwich extends ItemFoodSCM
+{
 
-public class ItemFoodSandwich extends ItemFoodSCM {
-
-    public ItemFoodSandwich(int par1, int par2, float par3, boolean par4) {
+    public ItemFoodSandwich(int par1, int par2, float par3, boolean par4)
+    {
         super(par1, par2, par3, par4);
-        
-        setCreativeTab(SixCoreMod.tabSixCoreItems);
-        maxStackSize = 64;
+
+        this.setCreativeTab(SixCoreMod.tabSixCoreFood);
+        this.maxStackSize = 64;
     }
-    
-    
 
 }
