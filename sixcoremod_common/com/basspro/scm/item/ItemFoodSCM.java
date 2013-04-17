@@ -14,7 +14,7 @@ public class ItemFoodSCM extends ItemFood
     public ItemFoodSCM(int id, int par2, float par3, boolean par4)
     {
 
-        super(id /* - Reference.SHIFTED_ID_RANGE_CORRECTION*/, par2, par3, par4);
+        super(id - Reference.SHIFTED_ID_RANGE_CORRECTION, par2, par3, par4);
         maxStackSize = 1;
 
     }

@@ -14,7 +14,7 @@ public class ItemSCM extends Item
     public ItemSCM(int id)
     {
 
-        super(id /* - Reference.SHIFTED_ID_RANGE_CORRECTION*/ );
+        super(id - Reference.SHIFTED_ID_RANGE_CORRECTION);
         maxStackSize = 1;
         setNoRepair();
 
