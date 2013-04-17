@@ -6,6 +6,7 @@ import net.minecraft.creativetab.CreativeTabs;
 
 import com.basspro.scm.block.SixCoreModBlocks;
 import com.basspro.scm.configuration.ConfigurationHandler;
+import com.basspro.scm.core.handlers.LocalizationHandler;
 import com.basspro.scm.core.proxy.CommonProxy;
 import com.basspro.scm.creativetab.TabSixCoreFood;
 import com.basspro.scm.item.SixCoreModItems;
@@ -36,7 +37,7 @@ public class SixCoreMod
     // TabSixCoreModBlocks(CreativeTabs.getNextID(), "Six Core Blocks");
 
     public static CreativeTabs tabSixCoreFood = new TabSixCoreFood(
-            CreativeTabs.getNextID(), "Six Core Food Stuff");
+            CreativeTabs.getNextID(), Reference.MOD_ID);
 
     // public static CreativeTabs tabSixCoreModArmor = new
     // TabSixCoreModArmor(CreativeTabs.getNextID(), "Six Core Armor");
@@ -48,7 +49,14 @@ public class SixCoreMod
     @PreInit
     public void init(FMLPreInitializationEvent event)
     {
-        ConfigurationHandler.init(new File(event.getModConfigurationDirectory().getAbsolutePath() + File.separator + Reference.CHANNEL_NAME + File.separator + Reference.MOD_ID + ".cfg"));
+        // Load the localization files into the LanguageRegistry
+        LocalizationHandler.loadLanguages();
+
+        ConfigurationHandler.init(new File(event.getModConfigurationDirectory()
+                .getAbsolutePath()
+                + File.separator
+                + Reference.CHANNEL_NAME
+                + File.separator + Reference.MOD_ID + ".cfg"));
     }
 
     @Init
