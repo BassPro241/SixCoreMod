@@ -17,8 +17,9 @@ public class Textures
 
     // Item Textures
     public static final String ITEM_PORK_SANDWICH = ITEM_TEXTURE_LOCATION
-            + "porkBurger.png";
+            + "porkSandwich.png";
     public static final String ITEM_FISH_SANDWICH = ITEM_TEXTURE_LOCATION
-            + "fishBurger.png";
+            + "fishSandwich.png";
+    public static final String ITEM_CANDY = ITEM_TEXTURE_LOCATION + "candy.png";
 
 }

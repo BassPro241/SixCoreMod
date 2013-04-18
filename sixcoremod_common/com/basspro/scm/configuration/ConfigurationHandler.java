@@ -34,6 +34,9 @@ public class ConfigurationHandler
             ItemIds.FISH_SANDWICH = configuration.getItem(
                     Strings.FISH_SANDWICH_NAME, ItemIds.FISH_SANDWICH_DEFAULT)
                     .getInt(ItemIds.FISH_SANDWICH_DEFAULT);
+            ItemIds.CANDY = configuration.getItem(
+                    Strings.CANDY_NAME, ItemIds.CANDY_DEFAULT)
+                    .getInt(ItemIds.CANDY_DEFAULT);
 
         } catch (Exception e)
         {

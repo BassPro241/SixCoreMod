@@ -17,6 +17,7 @@ public class LocalizationHandler
             LanguageRegistry.instance().loadLocalization(localizationFile,
                     LocalizationHelper.getLocaleFromFileName(localizationFile),
                     LocalizationHelper.isXMLLanguageFile(localizationFile));
+
         }
     }
 }
