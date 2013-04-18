@@ -4,6 +4,5 @@
 	<comment>English (en_US) Localization File</comment>
 	<entry key="item.porkSandwich.name">Pork Sandwich</entry>
 	<entry key="item.fishSandwich.name">Fish Sandwich</entry>
-
-	<entry key="itemGroup.SCM">Six Core Mod Food</entry>
+	<entry key="itemGroup.SCMFood">Six Core Mod Food</entry>
 </properties>

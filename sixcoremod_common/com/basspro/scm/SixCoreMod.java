@@ -37,7 +37,7 @@ public class SixCoreMod
     // TabSixCoreModBlocks(CreativeTabs.getNextID(), "Six Core Blocks");
 
     public static CreativeTabs tabSixCoreFood = new TabSixCoreFood(
-            CreativeTabs.getNextID(), Reference.MOD_ID);
+            CreativeTabs.getNextID(), Reference.MOD_ID + "Food");
 
     // public static CreativeTabs tabSixCoreModArmor = new
     // TabSixCoreModArmor(CreativeTabs.getNextID(), "Six Core Armor");
@@ -57,18 +57,20 @@ public class SixCoreMod
                 + File.separator
                 + Reference.CHANNEL_NAME
                 + File.separator + Reference.MOD_ID + ".cfg"));
-    }
 
-    @Init
-    private void load(FMLInitializationEvent event)
-    {
         // Blocks
-        SixCoreModBlocks.init();
+        // SixCoreModBlocks.init();
 
         // Items
         SixCoreModItems.init();
 
         // Recipes
-        RecipesSixCoreMod.init();
+        // RecipesSixCoreMod.init();
+    }
+
+    @Init
+    private void load(FMLInitializationEvent event)
+    {
+
     }
 }
