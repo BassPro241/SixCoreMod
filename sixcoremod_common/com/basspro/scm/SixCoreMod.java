@@ -4,7 +4,6 @@ import java.io.File;
 
 import net.minecraft.creativetab.CreativeTabs;
 
-import com.basspro.scm.block.SixCoreModBlocks;
 import com.basspro.scm.configuration.ConfigurationHandler;
 import com.basspro.scm.core.handlers.LocalizationHandler;
 import com.basspro.scm.core.proxy.CommonProxy;
@@ -39,7 +38,7 @@ public class SixCoreMod
 
     public static CreativeTabs tabSixCoreMaterial = new TabSixCoreMaterial(
             CreativeTabs.getNextID(), Reference.MOD_ID + "Material");
-    
+
     public static CreativeTabs tabSixCoreFood = new TabSixCoreFood(
             CreativeTabs.getNextID(), Reference.MOD_ID + "Food");
 

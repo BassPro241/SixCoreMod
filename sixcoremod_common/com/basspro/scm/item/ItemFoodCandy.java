@@ -11,6 +11,6 @@ public class ItemFoodCandy extends ItemFoodSCM
 
         this.setUnlocalizedName(Strings.CANDY_NAME);
         this.setCreativeTab(SixCoreMod.tabSixCoreFood);
-        this.maxStackSize = 64;
+        maxStackSize = 64;
     }
 }

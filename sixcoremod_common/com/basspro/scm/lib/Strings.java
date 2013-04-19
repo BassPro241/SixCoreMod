@@ -17,5 +17,6 @@ public class Strings
     public static final String CARAMEL_NAME = "caramel";
     public static final String CARAMEL_APPLE_NAME = "caramelApple";
     public static final String APPLE_PIE_NAME = "applePie";
+    public static final String ONYX_NAME = "onyx";
 
 }

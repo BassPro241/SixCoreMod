@@ -9,6 +9,7 @@
 	<entry key="item.caramel.name">Caramel</entry>
 	<entry key="item.caramelApple.name">Caramel Apple</entry>
 	<entry key="item.applePie.name">Apple Pie</entry>
+	<entry key="item.onyx.name">Onyx</entry>
 	<entry key="itemGroup.SCMFood">Six Core Mod Foodstuffs</entry>
 	<entry key="itemGroup.SCMMaterial">Six Core Mod Materials</entry>
 </properties>

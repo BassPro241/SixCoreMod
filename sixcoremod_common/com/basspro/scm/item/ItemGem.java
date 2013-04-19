@@ -1,14 +1,12 @@
 package com.basspro.scm.item;
 
 import com.basspro.scm.SixCoreMod;
-import com.basspro.scm.lib.Strings;
 
-public class ItemCaramel extends ItemSCM
+public class ItemGem extends ItemSCM
 {
-    public ItemCaramel(int id)
+    public ItemGem(int id)
     {
         super(id);
-        this.setUnlocalizedName(Strings.CARAMEL_NAME);
         this.setCreativeTab(SixCoreMod.tabSixCoreMaterial);
         maxStackSize = 64;
     }

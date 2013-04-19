@@ -11,7 +11,7 @@ public class ItemFoodBreadToast extends ItemFoodSCM
 
         this.setUnlocalizedName(Strings.BREAD_TOAST_NAME);
         this.setCreativeTab(SixCoreMod.tabSixCoreFood);
-        this.maxStackSize = 64;
+        maxStackSize = 64;
     }
 
 }

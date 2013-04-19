@@ -21,9 +21,15 @@ public class Textures
     public static final String ITEM_FISH_SANDWICH = ITEM_TEXTURE_LOCATION
             + "fishSandwich.png";
     public static final String ITEM_CANDY = ITEM_TEXTURE_LOCATION + "candy.png";
-    public static final String ITEM_BREAD_TOAST = ITEM_TEXTURE_LOCATION + "breadToast.png";
-    public static final String ITEM_CARAMEL = ITEM_TEXTURE_LOCATION + "caramel.png";
-    public static final String ITEM_CARAMEL_APPLE = ITEM_TEXTURE_LOCATION + "caramelApple.png";
-    public static final String ITEM_APPLE_PIE = ITEM_TEXTURE_LOCATION + "applePie.png";
+    public static final String ITEM_BREAD_TOAST = ITEM_TEXTURE_LOCATION
+            + "breadToast.png";
+    public static final String ITEM_CARAMEL = ITEM_TEXTURE_LOCATION
+            + "caramel.png";
+    public static final String ITEM_CARAMEL_APPLE = ITEM_TEXTURE_LOCATION
+            + "caramelApple.png";
+    public static final String ITEM_APPLE_PIE = ITEM_TEXTURE_LOCATION
+            + "applePie.png";
+
+    public static final String ITEM_ONYX = ITEM_TEXTURE_LOCATION + "onyx.png";
 
 }

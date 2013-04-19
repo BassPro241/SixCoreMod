@@ -8,6 +8,7 @@ import com.basspro.scm.lib.Strings;
 public class SixCoreModItems
 {
 
+    // Food/Food related stuff initialization
     public static Item porkSandwich;
     public static Item fishSandwich;
     public static Item candy;
@@ -15,6 +16,9 @@ public class SixCoreModItems
     public static Item caramel;
     public static Item caramelApple;
     public static Item applePie;
+
+    // Mineral Initialization
+    public static Item onyx;
 
     public static void init()
     {
@@ -30,6 +34,8 @@ public class SixCoreModItems
         caramelApple = new ItemFoodCaramelApple(ItemIds.CARAMEL_APPLE, 7, 0.4F,
                 false);
         applePie = new ItemFoodApplePie(ItemIds.APPLE_PIE, 10, 1.0F, false);
+
+        onyx = new ItemGem(ItemIds.ONYX).setUnlocalizedName(Strings.ONYX_NAME);
     }
 
 }

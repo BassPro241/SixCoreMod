@@ -11,7 +11,7 @@ public class ItemFoodCaramelApple extends ItemFoodSCM
 
         this.setUnlocalizedName(Strings.CARAMEL_APPLE_NAME);
         this.setCreativeTab(SixCoreMod.tabSixCoreFood);
-        this.maxStackSize = 64;
+        maxStackSize = 64;
     }
 
 }

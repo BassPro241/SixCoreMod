@@ -10,7 +10,7 @@ public class ItemFoodSandwich extends ItemFoodSCM
         super(par1, par2, par3, par4);
 
         this.setCreativeTab(SixCoreMod.tabSixCoreFood);
-        this.maxStackSize = 64;
+        maxStackSize = 64;
     }
 
 }

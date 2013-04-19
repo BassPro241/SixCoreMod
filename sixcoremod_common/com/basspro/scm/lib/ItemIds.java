@@ -11,6 +11,7 @@ public class ItemIds
     public static int CARAMEL_DEFAULT = 20004;
     public static int CARAMEL_APPLE_DEFAULT = 20005;
     public static int APPLE_PIE_DEFAULT = 20006;
+    public static int ONYX_DEFAULT = 20007;
 
     /* Current item ids */
     public static int PORK_SANDWICH;
@@ -20,4 +21,5 @@ public class ItemIds
     public static int CARAMEL;
     public static int CARAMEL_APPLE;
     public static int APPLE_PIE;
+    public static int ONYX;
 }

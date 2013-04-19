@@ -37,15 +37,19 @@ public class RecipesSixCoreMod
                 "B", "P", "B", 'B', breadStack, 'P', cookedporkStack);
         GameRegistry.addRecipe(new ItemStack(SixCoreModItems.fishSandwich),
                 "B", "F", "B", 'B', breadStack, 'F', cookedfishStack);
-        GameRegistry.addRecipe(new ItemStack(SixCoreModItems.candy), "CCC", 'C', dyeStack);
-        GameRegistry.addRecipe(new ItemStack(SixCoreModItems.candy), "C", "C", "C", 'C',
-                dyeStack);
-        GameRegistry.addRecipe(new ItemStack(SixCoreModItems.caramelApple), " C ", "CAC", 'C',
-                caramelStack, 'A', redappleStack);
-        GameRegistry.addRecipe(new ItemStack(SixCoreModItems.applePie), "SAS", "WAW", "WWW",
-                'S', sugarStack, 'A', redappleStack, 'W', wheatStack);
-        FurnaceRecipes.smelting().addSmelting(Item.bread.itemID, new ItemStack(SixCoreModItems.breadToast, 1), 0.5F);
-        FurnaceRecipes.smelting().addSmelting(Item.sugar.itemID, new ItemStack(SixCoreModItems.caramel, 1), 0.1F);
+        GameRegistry.addRecipe(new ItemStack(SixCoreModItems.candy), "CCC",
+                'C', dyeStack);
+        GameRegistry.addRecipe(new ItemStack(SixCoreModItems.candy), "C", "C",
+                "C", 'C', dyeStack);
+        GameRegistry.addRecipe(new ItemStack(SixCoreModItems.caramelApple),
+                " C ", "CAC", 'C', caramelStack, 'A', redappleStack);
+        GameRegistry.addRecipe(new ItemStack(SixCoreModItems.applePie), "SAS",
+                "WAW", "WWW", 'S', sugarStack, 'A', redappleStack, 'W',
+                wheatStack);
+        FurnaceRecipes.smelting().addSmelting(Item.bread.itemID,
+                new ItemStack(SixCoreModItems.breadToast, 1), 0.5F);
+        FurnaceRecipes.smelting().addSmelting(Item.sugar.itemID,
+                new ItemStack(SixCoreModItems.caramel, 1), 0.1F);
 
     }
 

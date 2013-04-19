@@ -11,8 +11,7 @@ public class ItemFoodApplePie extends ItemFoodSCM
 
         this.setUnlocalizedName(Strings.APPLE_PIE_NAME);
         this.setCreativeTab(SixCoreMod.tabSixCoreFood);
-        this.maxStackSize = 64;
+        maxStackSize = 64;
     }
-
 
 }

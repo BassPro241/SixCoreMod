@@ -34,21 +34,21 @@ public class ConfigurationHandler
             ItemIds.FISH_SANDWICH = configuration.getItem(
                     Strings.FISH_SANDWICH_NAME, ItemIds.FISH_SANDWICH_DEFAULT)
                     .getInt(ItemIds.FISH_SANDWICH_DEFAULT);
-            ItemIds.CANDY = configuration.getItem(
-                    Strings.CANDY_NAME, ItemIds.CANDY_DEFAULT)
-                    .getInt(ItemIds.CANDY_DEFAULT);
+            ItemIds.CANDY = configuration.getItem(Strings.CANDY_NAME,
+                    ItemIds.CANDY_DEFAULT).getInt(ItemIds.CANDY_DEFAULT);
             ItemIds.BREAD_TOAST = configuration.getItem(
                     Strings.BREAD_TOAST_NAME, ItemIds.BREAD_TOAST_DEFAULT)
                     .getInt(ItemIds.BREAD_TOAST_DEFAULT);
-            ItemIds.CARAMEL = configuration.getItem(
-                    Strings.CARAMEL_NAME, ItemIds.CARAMEL_DEFAULT)
-                    .getInt(ItemIds.CARAMEL_DEFAULT);
+            ItemIds.CARAMEL = configuration.getItem(Strings.CARAMEL_NAME,
+                    ItemIds.CARAMEL_DEFAULT).getInt(ItemIds.CARAMEL_DEFAULT);
             ItemIds.CARAMEL_APPLE = configuration.getItem(
                     Strings.CARAMEL_APPLE_NAME, ItemIds.CARAMEL_APPLE_DEFAULT)
                     .getInt(ItemIds.CARAMEL_APPLE_DEFAULT);
-            ItemIds.APPLE_PIE = configuration.getItem(
-                    Strings.APPLE_PIE_NAME, ItemIds.APPLE_PIE_DEFAULT)
+            ItemIds.APPLE_PIE = configuration.getItem(Strings.APPLE_PIE_NAME,
+                    ItemIds.APPLE_PIE_DEFAULT)
                     .getInt(ItemIds.APPLE_PIE_DEFAULT);
+            ItemIds.ONYX = configuration.getItem(Strings.ONYX_NAME,
+                    ItemIds.ONYX_DEFAULT).getInt(ItemIds.ONYX_DEFAULT);
 
         } catch (Exception e)
         {
