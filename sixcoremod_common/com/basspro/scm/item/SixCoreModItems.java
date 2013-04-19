@@ -11,6 +11,10 @@ public class SixCoreModItems
     public static Item porkSandwich;
     public static Item fishSandwich;
     public static Item candy;
+    public static Item breadToast;
+    public static Item caramel;
+    public static Item caramelApple;
+    public static Item applePie;
 
     public static void init()
     {
@@ -21,6 +25,11 @@ public class SixCoreModItems
         fishSandwich = new ItemFoodSandwich(ItemIds.FISH_SANDWICH, 8, 0.8F,
                 false).setUnlocalizedName(Strings.FISH_SANDWICH_NAME);
         candy = new ItemFoodCandy(ItemIds.CANDY, 4, 0.6F, false);
+        breadToast = new ItemFoodBreadToast(ItemIds.BREAD_TOAST, 6, 0.6F, false);
+        caramel = new ItemCaramel(ItemIds.CARAMEL);
+        caramelApple = new ItemFoodCaramelApple(ItemIds.CARAMEL_APPLE, 7, 0.4F,
+                false);
+        applePie = new ItemFoodApplePie(ItemIds.APPLE_PIE, 10, 1.0F, false);
     }
 
 }

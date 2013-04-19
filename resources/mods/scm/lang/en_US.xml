@@ -5,5 +5,10 @@
 	<entry key="item.porkSandwich.name">Pork Sandwich</entry>
 	<entry key="item.fishSandwich.name">Fish Sandwich</entry>
 	<entry key="item.candy.name">Candy Bar</entry>
-	<entry key="itemGroup.SCMFood">Six Core Mod Food</entry>
+	<entry key="item.breadToast.name">Toast</entry>
+	<entry key="item.caramel.name">Caramel</entry>
+	<entry key="item.caramelApple.name">Caramel Apple</entry>
+	<entry key="item.applePie.name">Apple Pie</entry>
+	<entry key="itemGroup.SCMFood">Six Core Mod Foodstuffs</entry>
+	<entry key="itemGroup.SCMMaterial">Six Core Mod Materials</entry>
 </properties>
