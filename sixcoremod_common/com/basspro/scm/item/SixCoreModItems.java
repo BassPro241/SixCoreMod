@@ -19,6 +19,11 @@ public class SixCoreModItems
 
     // Mineral Initialization
     public static Item onyx;
+    public static Item sapphire;
+    public static Item ruby;
+    public static Item ingotBronze;
+    public static Item ingotSilver;
+    public static Item ingotPlatinum;
 
     public static void init()
     {
@@ -36,6 +41,7 @@ public class SixCoreModItems
         applePie = new ItemFoodApplePie(ItemIds.APPLE_PIE, 10, 1.0F, false);
 
         onyx = new ItemGem(ItemIds.ONYX).setUnlocalizedName(Strings.ONYX_NAME);
+        
     }
 
 }

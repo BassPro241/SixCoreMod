@@ -7,8 +7,10 @@ import net.minecraft.creativetab.CreativeTabs;
 import com.basspro.scm.configuration.ConfigurationHandler;
 import com.basspro.scm.core.handlers.LocalizationHandler;
 import com.basspro.scm.core.proxy.CommonProxy;
+import com.basspro.scm.creativetab.TabSixCoreBlock;
 import com.basspro.scm.creativetab.TabSixCoreFood;
 import com.basspro.scm.creativetab.TabSixCoreMaterial;
+import com.basspro.scm.creativetab.TabSixCoreOre;
 import com.basspro.scm.item.SixCoreModItems;
 import com.basspro.scm.lib.Reference;
 import com.basspro.scm.recipe.RecipesSixCoreMod;
@@ -33,8 +35,11 @@ public class SixCoreMod
     @SidedProxy(clientSide = Reference.CLIENT_PROXY, serverSide = Reference.COMMON_PROXY)
     public static CommonProxy proxy;
 
-    // public static CreativeTabs tabSixCoreModBlocks = new
-    // TabSixCoreModBlocks(CreativeTabs.getNextID(), "Six Core Blocks");
+    public static CreativeTabs tabSixCoreModBlock = new TabSixCoreBlock(
+            CreativeTabs.getNextID(), Reference.MOD_ID + "Block");
+
+    public static CreativeTabs tabSixCoreModOre = new TabSixCoreOre(
+            CreativeTabs.getNextID(), Reference.MOD_ID + "Ore");
 
     public static CreativeTabs tabSixCoreMaterial = new TabSixCoreMaterial(
             CreativeTabs.getNextID(), Reference.MOD_ID + "Material");
