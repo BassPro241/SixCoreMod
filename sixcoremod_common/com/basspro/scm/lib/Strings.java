@@ -11,7 +11,7 @@ public class Strings
 
     public static final String ONYX_ORE_NAME = "onyxOre";
     public static final String ONYX_BLOCK_NAME = "onyxBlock";
-    
+
     /* Item name constants */
     public static final String PORK_SANDWICH_NAME = "porkSandwich";
     public static final String FISH_SANDWICH_NAME = "fishSandwich";

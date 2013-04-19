@@ -28,9 +28,13 @@ public class ConfigurationHandler
 
             /* Block configs */
 
-            BlockIds.ONYX_ORE = configuration.getBlock(Strings.ONYX_ORE_NAME, BlockIds.ONYX_ORE_DEFAULT).getInt(BlockIds.ONYX_ORE_DEFAULT);
-            BlockIds.ONYX_BLOCK = configuration.getBlock(Strings.ONYX_BLOCK_NAME, BlockIds.ONYX_BLOCK_DEFAULT).getInt(BlockIds.ONYX_BLOCK_DEFAULT);
-            
+            BlockIds.ONYX_ORE = configuration.getBlock(Strings.ONYX_ORE_NAME,
+                    BlockIds.ONYX_ORE_DEFAULT)
+                    .getInt(BlockIds.ONYX_ORE_DEFAULT);
+            BlockIds.ONYX_BLOCK = configuration.getBlock(
+                    Strings.ONYX_BLOCK_NAME, BlockIds.ONYX_BLOCK_DEFAULT)
+                    .getInt(BlockIds.ONYX_BLOCK_DEFAULT);
+
             /* Item configs */
             ItemIds.PORK_SANDWICH = configuration.getItem(
                     Strings.PORK_SANDWICH_NAME, ItemIds.PORK_SANDWICH_DEFAULT)

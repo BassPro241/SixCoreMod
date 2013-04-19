@@ -2,6 +2,7 @@ package com.basspro.scm.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraftforge.common.MinecraftForge;
 
 import com.basspro.scm.lib.BlockIds;
 import com.basspro.scm.lib.Strings;
@@ -18,20 +19,24 @@ public class SixCoreModBlocks
     public static Block oreOnyx;
     public static Block oreBronze;
     public static Block orePlatinum;
-    
+
     public static Block onyxBlock;
 
     // Nether Ores
     public static Block oreOnyxNether;
-    
+
     public static void init()
     {
         oreOnyx = new OreOnyx(BlockIds.ONYX_ORE);
-        onyxBlock = new BlockOreMetal(BlockIds.ONYX_BLOCK, Material.iron).setUnlocalizedName("onyxBlock");
-        
+        onyxBlock = new BlockOreMetal(BlockIds.ONYX_BLOCK, Material.iron)
+                .setUnlocalizedName("onyxBlock");
+
         GameRegistry.registerBlock(oreOnyx, Strings.ONYX_ORE_NAME);
         GameRegistry.registerBlock(onyxBlock, Strings.ONYX_BLOCK_NAME);
-        
+
+        MinecraftForge.setBlockHarvestLevel(oreOnyx, "pickaxe", 2);
+        MinecraftForge.setBlockHarvestLevel(onyxBlock, "pickaxe", 2);
+
     }
 
 }

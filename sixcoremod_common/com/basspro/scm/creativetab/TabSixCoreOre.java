@@ -21,5 +21,4 @@ public class TabSixCoreOre extends CreativeTabs
         return BlockIds.ONYX_ORE;
     }
 
-
 }

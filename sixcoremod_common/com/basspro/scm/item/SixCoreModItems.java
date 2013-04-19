@@ -41,7 +41,7 @@ public class SixCoreModItems
         applePie = new ItemFoodApplePie(ItemIds.APPLE_PIE, 10, 1.0F, false);
 
         onyx = new ItemGem(ItemIds.ONYX).setUnlocalizedName(Strings.ONYX_NAME);
-        
+
     }
 
 }

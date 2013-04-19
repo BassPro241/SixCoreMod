@@ -10,7 +10,7 @@ public class BlockOreMetal extends BlockSCM
     public BlockOreMetal(int id, Material material)
     {
         super(id, material);
-        
+
         setHardness(3.0F);
         setStepSound(Block.soundMetalFootstep);
         setCreativeTab(SixCoreMod.tabSixCoreModBlock);
