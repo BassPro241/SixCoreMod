@@ -4,6 +4,7 @@ import java.io.File;
 
 import net.minecraft.creativetab.CreativeTabs;
 
+import com.basspro.scm.block.SixCoreModBlocks;
 import com.basspro.scm.configuration.ConfigurationHandler;
 import com.basspro.scm.core.handlers.LocalizationHandler;
 import com.basspro.scm.core.proxy.CommonProxy;
@@ -67,7 +68,7 @@ public class SixCoreMod
                 + File.separator + Reference.MOD_ID + ".cfg"));
 
         // Blocks
-        // SixCoreModBlocks.init();
+        SixCoreModBlocks.init();
 
         // Items
         SixCoreModItems.init();

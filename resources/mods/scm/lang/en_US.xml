@@ -10,8 +10,8 @@
 	<entry key="item.caramelApple.name">Caramel Apple</entry>
 	<entry key="item.applePie.name">Apple Pie</entry>
 	<entry key="item.onyx.name">Onyx</entry>
-	<entry key="block.onyxOre.name">Onyx Ore</entry>
-	<entry key="block.onyxBlock.name">Block of Onyx</entry>
+	<entry key="tile.onyxOre.name">Onyx Ore</entry>
+	<entry key="tile.onyxBlock.name">Block of Onyx</entry>
 	<entry key="itemGroup.SCMFood">Six Core Mod Foodstuffs</entry>
 	<entry key="itemGroup.SCMMaterial">Six Core Mod Materials</entry>
 	<entry key="itemGroup.SCMOre">Six Core Mod Ores</entry>
