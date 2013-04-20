@@ -19,6 +19,7 @@ public class SixCoreModBlocks
     public static Block oreOnyx;
     public static Block oreBronze;
     public static Block orePlatinum;
+    public static Block oreEridium;
 
     public static Block onyxBlock;
 

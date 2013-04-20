@@ -9,6 +9,7 @@ public class BlockIds
     public static int BRONZE_ORE_DEFAULT = 3003;
     public static int SILVER_ORE_DEFAULT = 3004;
     public static int PLATINUM_ORE_DEFAULT = 3005;
+    public static int ERIDIUM_ORE_DEFAULT = 3007;
 
     public static int ONYX_BLOCK_DEFAULT = 3006;
 
@@ -19,6 +20,7 @@ public class BlockIds
     public static int BRONZE_ORE;
     public static int SILVER_ORE;
     public static int PLATINUM_ORE;
+    public static int ERIDIUM_ORE;
 
     public static int ONYX_BLOCK;
 }

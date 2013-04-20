@@ -10,6 +10,11 @@ public class Strings
     /* Block name constants */
 
     public static final String ONYX_ORE_NAME = "onyxOre";
+    public static final String RUBY_ORE_NAME = "rubyOre";
+    public static final String SAPPHIRE_ORE_NAME = "sapphireOre";
+    public static final String SILVER_ORE_NAME = "silverOre";
+    public static final String BRONZE_ORE_NAME = "bronzeOre";
+    public static final String PLATINUM_ORE_NAME = "platinumOre";
     public static final String ONYX_BLOCK_NAME = "onyxBlock";
 
     /* Item name constants */
