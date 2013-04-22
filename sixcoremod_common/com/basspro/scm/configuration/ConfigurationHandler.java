@@ -34,6 +34,9 @@ public class ConfigurationHandler
             BlockIds.ONYX_BLOCK = configuration.getBlock(
                     Strings.ONYX_BLOCK_NAME, BlockIds.ONYX_BLOCK_DEFAULT)
                     .getInt(BlockIds.ONYX_BLOCK_DEFAULT);
+            BlockIds.ERIDIUM_ORE = configuration.getBlock(Strings.ERIDIUM_ORE_NAME,
+                    BlockIds.ERIDIUM_ORE_DEFAULT)
+                    .getInt(BlockIds.ERIDIUM_ORE_DEFAULT);
 
             /* Item configs */
             ItemIds.PORK_SANDWICH = configuration.getItem(

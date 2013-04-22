@@ -29,14 +29,17 @@ public class SixCoreModBlocks
     public static void init()
     {
         oreOnyx = new OreOnyx(BlockIds.ONYX_ORE);
+        oreEridium = new OreEridium(BlockIds.ERIDIUM_ORE);
         onyxBlock = new BlockOreMetal(BlockIds.ONYX_BLOCK, Material.iron)
                 .setUnlocalizedName("onyxBlock");
 
         GameRegistry.registerBlock(oreOnyx, Strings.ONYX_ORE_NAME);
         GameRegistry.registerBlock(onyxBlock, Strings.ONYX_BLOCK_NAME);
+        GameRegistry.registerBlock(oreEridium, Strings.ERIDIUM_ORE_NAME);
 
         MinecraftForge.setBlockHarvestLevel(oreOnyx, "pickaxe", 2);
         MinecraftForge.setBlockHarvestLevel(onyxBlock, "pickaxe", 2);
+        MinecraftForge.setBlockHarvestLevel(oreEridium, "pickaxe", 2);
 
     }
 

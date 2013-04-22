@@ -20,6 +20,7 @@ public class Textures
             + "onyxOre.png";
     public static final String BLOCK_ONYX_BLOCK = BLOCK_TEXTURE_LOCATION
             + "onyxBlock.png";
+    public static final String BLOCK_ERIDIUM_ORE = BLOCK_TEXTURE_LOCATION + "eridiumOre";
 
     // Item Textures
     public static final String ITEM_PORK_SANDWICH = ITEM_TEXTURE_LOCATION
