@@ -3,6 +3,7 @@ package com.basspro.scm.item;
 import net.minecraft.item.Item;
 
 import com.basspro.scm.lib.ItemIds;
+import com.basspro.scm.lib.Material;
 import com.basspro.scm.lib.Strings;
 
 public class SixCoreModItems
@@ -24,6 +25,9 @@ public class SixCoreModItems
     public static Item ingotBronze;
     public static Item ingotSilver;
     public static Item ingotPlatinum;
+    
+    // Tool Initialization
+    public static Item onyxSword;
 
     public static void init()
     {
@@ -41,6 +45,8 @@ public class SixCoreModItems
         applePie = new ItemFoodApplePie(ItemIds.APPLE_PIE, 10, 1.0F, false);
 
         onyx = new ItemGem(ItemIds.ONYX).setUnlocalizedName(Strings.ONYX_NAME);
+        
+        onyxSword = new ItemGemSword(ItemIds.ONYX_SWORD, Material.ONYX_TOOL_MATERIAL).setUnlocalizedName("onyxSword");
 
     }
 

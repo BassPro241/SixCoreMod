@@ -10,6 +10,7 @@
 	<entry key="item.caramelApple.name">Caramel Apple</entry>
 	<entry key="item.applePie.name">Apple Pie</entry>
 	<entry key="item.onyx.name">Onyx</entry>
+	<entry key="item.onyxSword.name">Onyx Sword</entry>
 	<entry key="tile.onyxOre.name">Onyx Ore</entry>
 	<entry key="tile.onyxBlock.name">Block of Onyx</entry>
 	<entry key="tile.eridiumOre.name">Eridium Ore</entry>
@@ -17,4 +18,5 @@
 	<entry key="itemGroup.SCMMaterial">Six Core Mod Materials</entry>
 	<entry key="itemGroup.SCMOre">Six Core Mod Ores</entry>
 	<entry key="itemGroup.SCMBlock">Six Core Mod Blocks</entry>
+	<entry key="itemGroup.SCMCombat">Six Core Mod Combat</entry>
 </properties>

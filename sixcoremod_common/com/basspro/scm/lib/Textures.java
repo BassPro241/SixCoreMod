@@ -38,5 +38,7 @@ public class Textures
             + "applePie.png";
 
     public static final String ITEM_ONYX = ITEM_TEXTURE_LOCATION + "onyx.png";
+    
+    public static final String ITEM_ONYX_SWORD = ITEM_TEXTURE_LOCATION + "onyxSword.png";
 
 }

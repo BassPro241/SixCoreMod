@@ -26,13 +26,13 @@ public class RecipesSixCoreMod
 
     // ItemStack sapphireStack = new ItemStack(sapphire);
     // ItemStack rubyStack = new ItemStack(ruby);
-    // ItemStack onyxStack = new ItemStack(ingotOnyx);
+    static ItemStack onyxStack = new ItemStack(SixCoreModItems.onyx);
     // ItemStack bronzeStack = new ItemStack(ingotBronze);
 
     public static void init()
     {
 
-        // Food recipes
+        /* Food recipes */
         GameRegistry.addRecipe(new ItemStack(SixCoreModItems.porkSandwich),
                 "B", "P", "B", 'B', breadStack, 'P', cookedporkStack);
         GameRegistry.addRecipe(new ItemStack(SixCoreModItems.fishSandwich),
@@ -50,6 +50,10 @@ public class RecipesSixCoreMod
                 new ItemStack(SixCoreModItems.breadToast, 1), 0.5F);
         FurnaceRecipes.smelting().addSmelting(Item.sugar.itemID,
                 new ItemStack(SixCoreModItems.caramel, 1), 0.1F);
+        
+        /* Tool Recipes */
+        GameRegistry.addRecipe(new ItemStack(SixCoreModItems.onyxSword, 1), "O",
+                "O", "S", 'O', onyxStack, 'S', stickStack);
 
     }
 

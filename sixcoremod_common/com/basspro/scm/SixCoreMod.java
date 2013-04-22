@@ -9,6 +9,7 @@ import com.basspro.scm.configuration.ConfigurationHandler;
 import com.basspro.scm.core.handlers.LocalizationHandler;
 import com.basspro.scm.core.proxy.CommonProxy;
 import com.basspro.scm.creativetab.TabSixCoreBlock;
+import com.basspro.scm.creativetab.TabSixCoreCombat;
 import com.basspro.scm.creativetab.TabSixCoreFood;
 import com.basspro.scm.creativetab.TabSixCoreMaterial;
 import com.basspro.scm.creativetab.TabSixCoreOre;
@@ -49,12 +50,13 @@ public class SixCoreMod
     public static CreativeTabs tabSixCoreFood = new TabSixCoreFood(
             CreativeTabs.getNextID(), Reference.MOD_ID + "Food");
 
-    // public static CreativeTabs tabSixCoreModArmor = new
-    // TabSixCoreModArmor(CreativeTabs.getNextID(), "Six Core Armor");
+    public static CreativeTabs tabSixCoreCombat = new TabSixCoreCombat(
+            CreativeTabs.getNextID(), Reference.MOD_ID + "Combat");
+
     // public static CreativeTabs tabSixCoreModTools = new
     // TabSixCoreModTools(CreativeTabs.getNextID(), "Six Core Tools");
     // public static CreativeTabs tabSixCoremodMobs = new
-    // TabSixCoreModMobs(CreativeTabs.getNextID(), "SkyCraft Mobs");
+    // TabSixCoreModMobs(CreativeTabs.getNextID(), "SiX Core Mobs");
 
     @PreInit
     public void init(FMLPreInitializationEvent event)

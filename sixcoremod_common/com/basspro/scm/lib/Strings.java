@@ -27,5 +27,9 @@ public class Strings
     public static final String CARAMEL_APPLE_NAME = "caramelApple";
     public static final String APPLE_PIE_NAME = "applePie";
     public static final String ONYX_NAME = "onyx";
+    public static final String ONYX_SWORD_NAME = "onyxSword";
+    
+    /* Tool and Armor Material constants */
+    public static final String ONYX_TOOL_MATERIAL_NAME = "onyxMaterial";
 
 }

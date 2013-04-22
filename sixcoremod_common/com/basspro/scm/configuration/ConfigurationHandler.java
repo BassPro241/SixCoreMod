@@ -60,6 +60,8 @@ public class ConfigurationHandler
                     .getInt(ItemIds.APPLE_PIE_DEFAULT);
             ItemIds.ONYX = configuration.getItem(Strings.ONYX_NAME,
                     ItemIds.ONYX_DEFAULT).getInt(ItemIds.ONYX_DEFAULT);
+            ItemIds.ONYX_SWORD = configuration.getItem(Strings.ONYX_SWORD_NAME,
+                    ItemIds.ONYX_SWORD_DEFAULT).getInt(ItemIds.ONYX_SWORD_DEFAULT);
 
         } catch (Exception e)
         {
