@@ -96,8 +96,8 @@ public class ConfigurationHandler
                     ItemIds.RUBY_DEFAULT).getInt(ItemIds.RUBY_DEFAULT);
             ItemIds.SAPPHIRE = configuration.getItem(Strings.SAPPHIRE_NAME,
                     ItemIds.SAPPHIRE_DEFAULT).getInt(ItemIds.SAPPHIRE_DEFAULT);
-            ItemIds.BRONZE_INGOT = configuration.getItem(Strings.ONYX_NAME,
-                    ItemIds.ONYX_DEFAULT).getInt(ItemIds.ONYX_DEFAULT);
+            ItemIds.BRONZE_INGOT = configuration.getItem(Strings.BRONZE_INGOT_NAME,
+                    ItemIds.BRONZE_INGOT_DEFAULT).getInt(ItemIds.BRONZE_INGOT_DEFAULT);
             ItemIds.PLATINUM_INGOT = configuration.getItem(Strings.PLATINUM_INGOT_NAME,
                     ItemIds.PLATINUM_INGOT_DEFAULT).getInt(ItemIds.PLATINUM_INGOT_DEFAULT);
             
