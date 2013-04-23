@@ -41,5 +41,8 @@ public class Strings
     
     /* Tool and Armor Material constants */
     public static final String ONYX_TOOL_MATERIAL_NAME = "onyxMaterial";
+    
+    /* Damage Source constants */
+    public static final String IS_CORRODING_NAME = "isCorroding";
 
 }
