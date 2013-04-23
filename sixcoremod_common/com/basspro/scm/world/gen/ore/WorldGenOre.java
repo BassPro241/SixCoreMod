@@ -37,7 +37,7 @@ public class WorldGenOre implements IWorldGenerator
             {
                 int X = BlockX + random.nextInt(16);
                 int Z = BlockZ + random.nextInt(16);
-                int Y = random.nextInt(17);
+                int Y = random.nextInt(16) + 1;
 
                 new WorldGenMinable(BlockIds.ONYX_ORE, 6).generate(world,
                         random, X, Y, Z);
@@ -50,12 +50,33 @@ public class WorldGenOre implements IWorldGenerator
             {
                 int X = BlockX + random.nextInt(16);
                 int Z = BlockZ + random.nextInt(16);
-                int Y = random.nextInt(33);
+                int Y = random.nextInt(32) + 1;
 
                 new WorldGenMinable(BlockIds.ERIDIUM_ORE, 4).generate(world,
                         random, X, Y, Z);
             }
         }
+
+        for (int i = 0; i < 3; i++)
+        {
+            int X = BlockX + random.nextInt(16);
+            int Z = BlockZ + random.nextInt(16);
+            int Y = random.nextInt(16) + 1;
+
+            new WorldGenMinable(BlockIds.RUBY_ORE, 4).generate(world, random,
+                    X, Y, Z);
+        }
+
+        for (int i = 0; i < 3; i++)
+        {
+            int X = BlockX + random.nextInt(16);
+            int Z = BlockZ + random.nextInt(16);
+            int Y = random.nextInt(16) + 1;
+
+            new WorldGenMinable(BlockIds.SAPPHIRE_ORE, 4).generate(world,
+                    random, X, Y, Z);
+        }
+
     }
 
     private void generateNether(World world, Random random, int i, int j)

@@ -13,6 +13,11 @@ public class ItemIds
     public static int APPLE_PIE_DEFAULT = 20006;
     public static int ONYX_DEFAULT = 20007;
     public static int ONYX_SWORD_DEFAULT = 20008;
+    public static int RUBY_DEFAULT = 20009;
+    public static int SAPPHIRE_DEFAULT = 20010;
+    public static int SILVER_INGOT_DEFAULT = 20011;
+    public static int BRONZE_INGOT_DEFAULT = 20012;
+    public static int PLATINUM_INGOT_DEFAULT = 20013;
 
     /* Current item ids */
     public static int PORK_SANDWICH;
@@ -24,4 +29,9 @@ public class ItemIds
     public static int APPLE_PIE;
     public static int ONYX;
     public static int ONYX_SWORD;
+    public static int RUBY;
+    public static int SAPPHIRE;
+    public static int SILVER_INGOT;
+    public static int BRONZE_INGOT;
+    public static int PLATINUM_INGOT;
 }

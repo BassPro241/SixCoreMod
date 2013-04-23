@@ -20,7 +20,18 @@ public class Textures
             + "onyxOre.png";
     public static final String BLOCK_ONYX_BLOCK = BLOCK_TEXTURE_LOCATION
             + "onyxBlock.png";
-    public static final String BLOCK_ERIDIUM_ORE = BLOCK_TEXTURE_LOCATION + "eridiumOre";
+    public static final String BLOCK_ERIDIUM_ORE = BLOCK_TEXTURE_LOCATION + "eridiumOre.png";
+    public static final String BLOCK_SAPPHIRE_ORE = BLOCK_TEXTURE_LOCATION + "sapphireOre.png";
+    public static final String BLOCK_SAPPHIRE_BLOCK = BLOCK_TEXTURE_LOCATION + "sapphireBlock.png";
+    public static final String BLOCK_RUBY_ORE = BLOCK_TEXTURE_LOCATION + "rubyOre.png";
+    public static final String BLOCK_RUBY_BLOCK = BLOCK_TEXTURE_LOCATION + "rubyBlock.png";
+//    public static final String BLOCK_BRONZE_ORE = BLOCK_TEXTURE_LOCATION + "bronzeOre.png";
+    public static final String BLOCK_BRONZE_BLOCK = BLOCK_TEXTURE_LOCATION + "bronzeBlock.png";
+//    public static final String BLOCK_PLATINUM_ORE = BLOCK_TEXTURE_LOCATION + "platinumOre.png";
+    public static final String BLOCK_PLATINUM_BLOCK = BLOCK_TEXTURE_LOCATION + "platinumBlock.png";
+//    public static final String BLOCK_SILVER_ORE = BLOCK_TEXTURE_LOCATION + "silverOre.png";
+    public static final String BLOCK_SILVER_BLOCK = BLOCK_TEXTURE_LOCATION + "silverBlock.png";
+    
 
     // Item Textures
     public static final String ITEM_PORK_SANDWICH = ITEM_TEXTURE_LOCATION
@@ -38,6 +49,11 @@ public class Textures
             + "applePie.png";
 
     public static final String ITEM_ONYX = ITEM_TEXTURE_LOCATION + "onyx.png";
+    public static final String ITEM_RUBY = ITEM_TEXTURE_LOCATION + "ruby.png";
+    public static final String ITEM_SAPPHIRE = ITEM_TEXTURE_LOCATION + "sapphire.png";
+    public static final String ITEM_BRONZE_INGOT = ITEM_TEXTURE_LOCATION + "bronzeIngot.png";
+    public static final String ITEM_SILVER_INGOT = ITEM_TEXTURE_LOCATION + "silverIngot.png";
+    public static final String ITEM_PLATINUM_INGOT = ITEM_TEXTURE_LOCATION + "platinumIngot.png";
     
     public static final String ITEM_ONYX_SWORD = ITEM_TEXTURE_LOCATION + "onyxSword.png";
 

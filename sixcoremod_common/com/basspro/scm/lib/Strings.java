@@ -17,6 +17,11 @@ public class Strings
     public static final String PLATINUM_ORE_NAME = "platinumOre";
     public static final String ERIDIUM_ORE_NAME = "eridiumOre";
     public static final String ONYX_BLOCK_NAME = "onyxBlock";
+    public static final String RUBY_BLOCK_NAME = "rubyBlock";
+    public static final String SAPPHIRE_BLOCK_NAME = "sapphireBlock";
+    public static final String SILVER_BLOCK_NAME = "silverBlock";
+    public static final String BRONZE_BLOCK_NAME = "bronzeBlock";
+    public static final String PLATINUM_BLOCK_NAME = "platinumBlock";
 
     /* Item name constants */
     public static final String PORK_SANDWICH_NAME = "porkSandwich";
@@ -28,6 +33,11 @@ public class Strings
     public static final String APPLE_PIE_NAME = "applePie";
     public static final String ONYX_NAME = "onyx";
     public static final String ONYX_SWORD_NAME = "onyxSword";
+    public static final String SILVER_INGOT_NAME = "silverIngot";
+    public static final String RUBY_NAME = "ruby";
+    public static final String SAPPHIRE_NAME = "sapphire";
+    public static final String BRONZE_INGOT_NAME = "bronzeIngot";
+    public static final String PLATINUM_INGOT_NAME = "platinumIngot";
     
     /* Tool and Armor Material constants */
     public static final String ONYX_TOOL_MATERIAL_NAME = "onyxMaterial";

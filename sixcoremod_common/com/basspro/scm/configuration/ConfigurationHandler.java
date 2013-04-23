@@ -31,12 +31,41 @@ public class ConfigurationHandler
             BlockIds.ONYX_ORE = configuration.getBlock(Strings.ONYX_ORE_NAME,
                     BlockIds.ONYX_ORE_DEFAULT)
                     .getInt(BlockIds.ONYX_ORE_DEFAULT);
+            BlockIds.ERIDIUM_ORE = configuration.getBlock(
+                    Strings.ERIDIUM_ORE_NAME, BlockIds.ERIDIUM_ORE_DEFAULT)
+                    .getInt(BlockIds.ERIDIUM_ORE_DEFAULT);
+            BlockIds.SAPPHIRE_ORE = configuration.getBlock(
+                    Strings.SAPPHIRE_ORE_NAME, BlockIds.SAPPHIRE_ORE_DEFAULT)
+                    .getInt(BlockIds.SAPPHIRE_ORE_DEFAULT);
+            BlockIds.RUBY_ORE = configuration.getBlock(Strings.RUBY_ORE_NAME,
+                    BlockIds.RUBY_ORE_DEFAULT)
+                    .getInt(BlockIds.RUBY_ORE_DEFAULT);
+            BlockIds.SILVER_ORE = configuration.getBlock(
+                    Strings.SILVER_ORE_NAME, BlockIds.SILVER_ORE_DEFAULT)
+                    .getInt(BlockIds.SILVER_ORE_DEFAULT);
+            BlockIds.PLATINUM_ORE = configuration.getBlock(
+                    Strings.PLATINUM_ORE_NAME, BlockIds.PLATINUM_ORE_DEFAULT)
+                    .getInt(BlockIds.PLATINUM_ORE_DEFAULT);
             BlockIds.ONYX_BLOCK = configuration.getBlock(
                     Strings.ONYX_BLOCK_NAME, BlockIds.ONYX_BLOCK_DEFAULT)
                     .getInt(BlockIds.ONYX_BLOCK_DEFAULT);
-            BlockIds.ERIDIUM_ORE = configuration.getBlock(Strings.ERIDIUM_ORE_NAME,
-                    BlockIds.ERIDIUM_ORE_DEFAULT)
-                    .getInt(BlockIds.ERIDIUM_ORE_DEFAULT);
+            BlockIds.SAPPHIRE_BLOCK = configuration.getBlock(
+                    Strings.SAPPHIRE_BLOCK_NAME,
+                    BlockIds.SAPPHIRE_BLOCK_DEFAULT).getInt(
+                    BlockIds.SAPPHIRE_BLOCK_DEFAULT);
+            BlockIds.RUBY_BLOCK = configuration.getBlock(
+                    Strings.RUBY_BLOCK_NAME, BlockIds.RUBY_BLOCK_DEFAULT)
+                    .getInt(BlockIds.RUBY_BLOCK_DEFAULT);
+            BlockIds.BRONZE_BLOCK = configuration.getBlock(
+                    Strings.BRONZE_BLOCK_NAME, BlockIds.BRONZE_BLOCK_DEFAULT)
+                    .getInt(BlockIds.BRONZE_BLOCK_DEFAULT);
+            BlockIds.SILVER_BLOCK = configuration.getBlock(
+                    Strings.SILVER_BLOCK_NAME, BlockIds.SILVER_BLOCK_DEFAULT)
+                    .getInt(BlockIds.SILVER_BLOCK_DEFAULT);
+            BlockIds.PLATINUM_BLOCK = configuration.getBlock(
+                    Strings.PLATINUM_BLOCK_NAME,
+                    BlockIds.PLATINUM_BLOCK_DEFAULT).getInt(
+                    BlockIds.PLATINUM_BLOCK_DEFAULT);
 
             /* Item configs */
             ItemIds.PORK_SANDWICH = configuration.getItem(
@@ -58,10 +87,23 @@ public class ConfigurationHandler
             ItemIds.APPLE_PIE = configuration.getItem(Strings.APPLE_PIE_NAME,
                     ItemIds.APPLE_PIE_DEFAULT)
                     .getInt(ItemIds.APPLE_PIE_DEFAULT);
+            
             ItemIds.ONYX = configuration.getItem(Strings.ONYX_NAME,
                     ItemIds.ONYX_DEFAULT).getInt(ItemIds.ONYX_DEFAULT);
+            ItemIds.SILVER_INGOT = configuration.getItem(Strings.SILVER_INGOT_NAME,
+                    ItemIds.SILVER_INGOT_DEFAULT).getInt(ItemIds.SILVER_INGOT_DEFAULT);
+            ItemIds.RUBY = configuration.getItem(Strings.RUBY_NAME,
+                    ItemIds.RUBY_DEFAULT).getInt(ItemIds.RUBY_DEFAULT);
+            ItemIds.SAPPHIRE = configuration.getItem(Strings.SAPPHIRE_NAME,
+                    ItemIds.SAPPHIRE_DEFAULT).getInt(ItemIds.SAPPHIRE_DEFAULT);
+            ItemIds.BRONZE_INGOT = configuration.getItem(Strings.ONYX_NAME,
+                    ItemIds.ONYX_DEFAULT).getInt(ItemIds.ONYX_DEFAULT);
+            ItemIds.PLATINUM_INGOT = configuration.getItem(Strings.PLATINUM_INGOT_NAME,
+                    ItemIds.PLATINUM_INGOT_DEFAULT).getInt(ItemIds.PLATINUM_INGOT_DEFAULT);
+            
             ItemIds.ONYX_SWORD = configuration.getItem(Strings.ONYX_SWORD_NAME,
-                    ItemIds.ONYX_SWORD_DEFAULT).getInt(ItemIds.ONYX_SWORD_DEFAULT);
+                    ItemIds.ONYX_SWORD_DEFAULT).getInt(
+                    ItemIds.ONYX_SWORD_DEFAULT);
 
         } catch (Exception e)
         {
