@@ -18,6 +18,7 @@ public class ItemIds
     public static int SILVER_INGOT_DEFAULT = 20011;
     public static int BRONZE_INGOT_DEFAULT = 20012;
     public static int PLATINUM_INGOT_DEFAULT = 20013;
+    public static int ERIDIUM_INGOT_DEFAULT = 20014;
 
     /* Current item ids */
     public static int PORK_SANDWICH;
@@ -34,4 +35,5 @@ public class ItemIds
     public static int SILVER_INGOT;
     public static int BRONZE_INGOT;
     public static int PLATINUM_INGOT;
+    public static int ERIDIUM_INGOT;
 }

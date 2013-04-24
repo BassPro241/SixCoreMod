@@ -38,11 +38,15 @@ public class Strings
     public static final String SAPPHIRE_NAME = "sapphire";
     public static final String BRONZE_INGOT_NAME = "bronzeIngot";
     public static final String PLATINUM_INGOT_NAME = "platinumIngot";
+    public static final String ERIDIUM_INGOT_NAME = "eridiumIngot";
     
     /* Tool and Armor Material constants */
     public static final String ONYX_TOOL_MATERIAL_NAME = "onyxMaterial";
     
     /* Damage Source constants */
     public static final String IS_CORRODING_NAME = "isCorroding";
+    
+    /* Enchantment Constants */
+    public static final String CORROSION_ASPECT_NAME = "corrosion";
 
 }

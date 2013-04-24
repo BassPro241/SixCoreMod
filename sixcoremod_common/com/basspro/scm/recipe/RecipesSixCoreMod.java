@@ -5,6 +5,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.FurnaceRecipes;
 
 import com.basspro.scm.item.SixCoreModItems;
+import com.basspro.scm.lib.BlockIds;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -27,6 +28,7 @@ public class RecipesSixCoreMod
     // ItemStack sapphireStack = new ItemStack(sapphire);
     // ItemStack rubyStack = new ItemStack(ruby);
     static ItemStack onyxStack = new ItemStack(SixCoreModItems.onyx);
+
     // ItemStack bronzeStack = new ItemStack(ingotBronze);
 
     public static void init()
@@ -46,14 +48,20 @@ public class RecipesSixCoreMod
         GameRegistry.addRecipe(new ItemStack(SixCoreModItems.applePie), "SAS",
                 "WAW", "WWW", 'S', sugarStack, 'A', redappleStack, 'W',
                 wheatStack);
+
+        /* Food Smelting */
         FurnaceRecipes.smelting().addSmelting(Item.bread.itemID,
-                new ItemStack(SixCoreModItems.breadToast, 1), 0.5F);
+                new ItemStack(SixCoreModItems.breadToast, 1), 0.3F);
         FurnaceRecipes.smelting().addSmelting(Item.sugar.itemID,
                 new ItemStack(SixCoreModItems.caramel, 1), 0.1F);
-        
+
         /* Tool Recipes */
-        GameRegistry.addRecipe(new ItemStack(SixCoreModItems.onyxSword, 1), "O",
-                "O", "S", 'O', onyxStack, 'S', stickStack);
+        GameRegistry.addRecipe(new ItemStack(SixCoreModItems.onyxSword, 1),
+                "O", "O", "S", 'O', onyxStack, 'S', stickStack);
+
+        /* Ore Smelting */
+        FurnaceRecipes.smelting().addSmelting(BlockIds.ERIDIUM_ORE,
+                new ItemStack(SixCoreModItems.eridiumIngot, 1), 1.0F);
 
     }
 

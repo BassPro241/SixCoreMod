@@ -100,6 +100,8 @@ public class ConfigurationHandler
                     ItemIds.BRONZE_INGOT_DEFAULT).getInt(ItemIds.BRONZE_INGOT_DEFAULT);
             ItemIds.PLATINUM_INGOT = configuration.getItem(Strings.PLATINUM_INGOT_NAME,
                     ItemIds.PLATINUM_INGOT_DEFAULT).getInt(ItemIds.PLATINUM_INGOT_DEFAULT);
+            ItemIds.ERIDIUM_INGOT = configuration.getItem(Strings.ERIDIUM_INGOT_NAME,
+                    ItemIds.ERIDIUM_INGOT_DEFAULT).getInt(ItemIds.ERIDIUM_INGOT_DEFAULT);
             
             ItemIds.ONYX_SWORD = configuration.getItem(Strings.ONYX_SWORD_NAME,
                     ItemIds.ONYX_SWORD_DEFAULT).getInt(

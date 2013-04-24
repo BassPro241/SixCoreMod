@@ -15,5 +15,5 @@ public class OreEridium extends BlockOreSCM
         setHardness(3.0F);
         setUnlocalizedName(Strings.ERIDIUM_ORE_NAME);
     }
-
+    
 }

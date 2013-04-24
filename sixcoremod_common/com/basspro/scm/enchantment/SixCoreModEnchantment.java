@@ -9,7 +9,7 @@ public class SixCoreModEnchantment
     
     public static void init()
     {
-        
+        corrosionAspect = new EnchantmentCorrosionAspect(22, 2);
     }
     
 }

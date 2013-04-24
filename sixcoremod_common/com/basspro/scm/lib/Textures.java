@@ -54,6 +54,7 @@ public class Textures
     public static final String ITEM_BRONZE_INGOT = ITEM_TEXTURE_LOCATION + "bronzeIngot.png";
     public static final String ITEM_SILVER_INGOT = ITEM_TEXTURE_LOCATION + "silverIngot.png";
     public static final String ITEM_PLATINUM_INGOT = ITEM_TEXTURE_LOCATION + "platinumIngot.png";
+    public static final String ITEM_ERIDIUM_INGOT = ITEM_TEXTURE_LOCATION + "eridiumIngot.png";
     
     public static final String ITEM_ONYX_SWORD = ITEM_TEXTURE_LOCATION + "onyxSword.png";
 

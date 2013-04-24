@@ -15,6 +15,7 @@
 	<entry key="item.bronzeIngot.name">Bronze Ingot</entry>
 	<entry key="item.silverIngot.name">Silver Ingot</entry>
 	<entry key="item.platinumIngot.name">Platinum Ingot</entry>
+	<entry key="item.eridiumIngot.name">Eridium Ingot</entry>
 	<entry key="item.onyxSword.name">Onyx Sword</entry>
 	<entry key="tile.onyxOre.name">Onyx Ore</entry>
 	<entry key="tile.eridiumOre.name">Eridium Ore</entry>
