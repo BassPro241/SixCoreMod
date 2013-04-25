@@ -27,4 +27,6 @@ Add Crystallisk Mob
 
 Add Raak Mob
 
+Add Spiderant Mob
+
 This list will be added to, but not until these tasks are complete.
