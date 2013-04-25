@@ -11,6 +11,12 @@ Add Weapons corresponding to those ores/minerals
 
 Add Eridium to villager trades
 
+Add Corrosion Damage Effect
+
+Add Shock Damage Effect
+
+Add Slag Damage Modifier
+
 Add Skag Mobs
 
 Add Stalker Mobs
