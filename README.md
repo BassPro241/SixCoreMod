@@ -27,4 +27,4 @@ Add Crystallisk Mob
 
 Add Raak Mob
 
-THis list will be added to, but not until these tasks are complete.
+This list will be added to, but not until these tasks are complete.
