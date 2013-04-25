@@ -31,4 +31,6 @@ Add Spiderant Mob
 
 Add Bullymong Mob
 
+Add Dimension: Pandora
+
 This list will be added to, but not until these tasks are complete.
