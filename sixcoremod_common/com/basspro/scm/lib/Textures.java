@@ -32,6 +32,8 @@ public class Textures
 //    public static final String BLOCK_SILVER_ORE = BLOCK_TEXTURE_LOCATION + "silverOre.png";
     public static final String BLOCK_SILVER_BLOCK = BLOCK_TEXTURE_LOCATION + "silverBlock.png";
     
+    public static final String BLOCK_DUST_BLOCK = BLOCK_TEXTURE_LOCATION + "dustBlock.png";
+    
 
     // Item Textures
     public static final String ITEM_PORK_SANDWICH = ITEM_TEXTURE_LOCATION

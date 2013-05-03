@@ -17,6 +17,8 @@ public class BlockIds
     public static int BRONZE_BLOCK_DEFAULT = 3010;
     public static int SILVER_BLOCK_DEFAULT = 3011;
     public static int PLATINUM_BLOCK_DEFAULT = 3012;
+    
+    public static int DUST_BLOCK_DEFAULT = 3020;
 
     /* Current block ID's */
     public static int ONYX_ORE;
@@ -33,4 +35,6 @@ public class BlockIds
     public static int BRONZE_BLOCK;
     public static int SILVER_BLOCK;
     public static int PLATINUM_BLOCK;
+    
+    public static int DUST_BLOCK;
 }

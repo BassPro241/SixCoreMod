@@ -30,6 +30,10 @@ public class SixCoreModBlocks
 
     // Nether Ores
     public static Block oreOnyxNether;
+    
+    // Terrain Blocks
+    public static Block blockDust;
+    public static Block blockStoneMossy;
 
     public static void init()
     {
@@ -47,6 +51,7 @@ public class SixCoreModBlocks
         bronzeBlock = new BlockOreMetal(BlockIds.BRONZE_BLOCK, Material.iron).setUnlocalizedName("bronzeBlock");
         platinumBlock = new BlockOreMetal(BlockIds.PLATINUM_BLOCK, Material.iron).setUnlocalizedName("platinumBlock");
         
+        blockDust = new BlockDust(BlockIds.DUST_BLOCK, Material.sand).setUnlocalizedName("dustBlock");
 
         GameRegistry.registerBlock(oreOnyx, Strings.ONYX_ORE_NAME);
         GameRegistry.registerBlock(oreEridium, Strings.ERIDIUM_ORE_NAME);
@@ -59,6 +64,8 @@ public class SixCoreModBlocks
         GameRegistry.registerBlock(rubyBlock, Strings.RUBY_BLOCK_NAME);
         GameRegistry.registerBlock(bronzeBlock, Strings.BRONZE_BLOCK_NAME);
         GameRegistry.registerBlock(platinumBlock, Strings.PLATINUM_BLOCK_NAME);
+        
+        GameRegistry.registerBlock(blockDust, Strings.DUST_BLOCK_NAME);
 
         MinecraftForge.setBlockHarvestLevel(oreOnyx, "pickaxe", 2);
         MinecraftForge.setBlockHarvestLevel(oreEridium, "pickaxe", 2);

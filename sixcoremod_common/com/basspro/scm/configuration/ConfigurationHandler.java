@@ -46,6 +46,7 @@ public class ConfigurationHandler
             BlockIds.PLATINUM_ORE = configuration.getBlock(
                     Strings.PLATINUM_ORE_NAME, BlockIds.PLATINUM_ORE_DEFAULT)
                     .getInt(BlockIds.PLATINUM_ORE_DEFAULT);
+            
             BlockIds.ONYX_BLOCK = configuration.getBlock(
                     Strings.ONYX_BLOCK_NAME, BlockIds.ONYX_BLOCK_DEFAULT)
                     .getInt(BlockIds.ONYX_BLOCK_DEFAULT);
@@ -66,6 +67,11 @@ public class ConfigurationHandler
                     Strings.PLATINUM_BLOCK_NAME,
                     BlockIds.PLATINUM_BLOCK_DEFAULT).getInt(
                     BlockIds.PLATINUM_BLOCK_DEFAULT);
+            
+            BlockIds.DUST_BLOCK = configuration.getBlock(
+                    Strings.DUST_BLOCK_NAME,
+                    BlockIds.DUST_BLOCK_DEFAULT).getInt(
+                    BlockIds.DUST_BLOCK_DEFAULT);
 
             /* Item configs */
             ItemIds.PORK_SANDWICH = configuration.getItem(
