@@ -24,9 +24,9 @@ public class WorldProviderPandora extends WorldProvider
 
     public void registerWorldChunkManager()
     {
-        this.worldChunkMgr = new WorldChunkManagerPandora(,
-                0.8F, 0.1F);
+        this.worldChunkMgr = new WorldChunkManagerPandora();
         this.dimensionId = SixCoreMod.dimension;
+        this.hasNoSky = false;
     }
 
     @Override

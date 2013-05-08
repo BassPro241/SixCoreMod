@@ -86,10 +86,10 @@ public class SixCoreMod
         // World Generation
         SixCoreModWorldGen.init();
 
-        /* DimensionManager.registerProviderType(dimension,
+        DimensionManager.registerProviderType(dimension,
                 WorldProviderPandora.class, false);
 
-        DimensionManager.registerDimension(dimension, dimension); */
+        DimensionManager.registerDimension(dimension, dimension);
     }
 
     @Init
