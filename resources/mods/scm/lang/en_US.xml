@@ -28,6 +28,7 @@
 	<entry key="tile.bronzeBlock.name">Block of Bronze</entry>
 	<entry key="tile.platinumBlock.name">Block of Platinum</entry>
 	<entry key="tile.dustBlock.name">Dust Block</entry>
+	<entry key="tile.pandoraPortal.name">Vault Portal</entry>
 	<entry key="itemGroup.SCMFood">Six Core Mod Foodstuffs</entry>
 	<entry key="itemGroup.SCMMaterial">Six Core Mod Materials</entry>
 	<entry key="itemGroup.SCMOre">Six Core Mod Ores</entry>

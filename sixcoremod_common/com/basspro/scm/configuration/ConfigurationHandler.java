@@ -46,7 +46,7 @@ public class ConfigurationHandler
             BlockIds.PLATINUM_ORE = configuration.getBlock(
                     Strings.PLATINUM_ORE_NAME, BlockIds.PLATINUM_ORE_DEFAULT)
                     .getInt(BlockIds.PLATINUM_ORE_DEFAULT);
-            
+
             BlockIds.ONYX_BLOCK = configuration.getBlock(
                     Strings.ONYX_BLOCK_NAME, BlockIds.ONYX_BLOCK_DEFAULT)
                     .getInt(BlockIds.ONYX_BLOCK_DEFAULT);
@@ -67,11 +67,15 @@ public class ConfigurationHandler
                     Strings.PLATINUM_BLOCK_NAME,
                     BlockIds.PLATINUM_BLOCK_DEFAULT).getInt(
                     BlockIds.PLATINUM_BLOCK_DEFAULT);
-            
+
             BlockIds.DUST_BLOCK = configuration.getBlock(
-                    Strings.DUST_BLOCK_NAME,
-                    BlockIds.DUST_BLOCK_DEFAULT).getInt(
-                    BlockIds.DUST_BLOCK_DEFAULT);
+                    Strings.DUST_BLOCK_NAME, BlockIds.DUST_BLOCK_DEFAULT)
+                    .getInt(BlockIds.DUST_BLOCK_DEFAULT);
+
+            BlockIds.PANDORAPORTAL_BLOCK = configuration.getBlock(
+                    Strings.PANDORAPORTAL_NAME,
+                    BlockIds.PANDORAPORTAL_BLOCK_DEFAULT).getInt(
+                    BlockIds.PANDORAPORTAL_BLOCK_DEFAULT);
 
             /* Item configs */
             ItemIds.PORK_SANDWICH = configuration.getItem(
@@ -93,31 +97,38 @@ public class ConfigurationHandler
             ItemIds.APPLE_PIE = configuration.getItem(Strings.APPLE_PIE_NAME,
                     ItemIds.APPLE_PIE_DEFAULT)
                     .getInt(ItemIds.APPLE_PIE_DEFAULT);
-            
+
             ItemIds.ONYX = configuration.getItem(Strings.ONYX_NAME,
                     ItemIds.ONYX_DEFAULT).getInt(ItemIds.ONYX_DEFAULT);
-            ItemIds.SILVER_INGOT = configuration.getItem(Strings.SILVER_INGOT_NAME,
-                    ItemIds.SILVER_INGOT_DEFAULT).getInt(ItemIds.SILVER_INGOT_DEFAULT);
+            ItemIds.SILVER_INGOT = configuration.getItem(
+                    Strings.SILVER_INGOT_NAME, ItemIds.SILVER_INGOT_DEFAULT)
+                    .getInt(ItemIds.SILVER_INGOT_DEFAULT);
             ItemIds.RUBY = configuration.getItem(Strings.RUBY_NAME,
                     ItemIds.RUBY_DEFAULT).getInt(ItemIds.RUBY_DEFAULT);
             ItemIds.SAPPHIRE = configuration.getItem(Strings.SAPPHIRE_NAME,
                     ItemIds.SAPPHIRE_DEFAULT).getInt(ItemIds.SAPPHIRE_DEFAULT);
-            ItemIds.BRONZE_INGOT = configuration.getItem(Strings.BRONZE_INGOT_NAME,
-                    ItemIds.BRONZE_INGOT_DEFAULT).getInt(ItemIds.BRONZE_INGOT_DEFAULT);
-            ItemIds.PLATINUM_INGOT = configuration.getItem(Strings.PLATINUM_INGOT_NAME,
-                    ItemIds.PLATINUM_INGOT_DEFAULT).getInt(ItemIds.PLATINUM_INGOT_DEFAULT);
-            ItemIds.ERIDIUM_INGOT = configuration.getItem(Strings.ERIDIUM_INGOT_NAME,
-                    ItemIds.ERIDIUM_INGOT_DEFAULT).getInt(ItemIds.ERIDIUM_INGOT_DEFAULT);
-            
+            ItemIds.BRONZE_INGOT = configuration.getItem(
+                    Strings.BRONZE_INGOT_NAME, ItemIds.BRONZE_INGOT_DEFAULT)
+                    .getInt(ItemIds.BRONZE_INGOT_DEFAULT);
+            ItemIds.PLATINUM_INGOT = configuration
+                    .getItem(Strings.PLATINUM_INGOT_NAME,
+                            ItemIds.PLATINUM_INGOT_DEFAULT).getInt(
+                            ItemIds.PLATINUM_INGOT_DEFAULT);
+            ItemIds.ERIDIUM_INGOT = configuration.getItem(
+                    Strings.ERIDIUM_INGOT_NAME, ItemIds.ERIDIUM_INGOT_DEFAULT)
+                    .getInt(ItemIds.ERIDIUM_INGOT_DEFAULT);
+
             ItemIds.ONYX_SWORD = configuration.getItem(Strings.ONYX_SWORD_NAME,
                     ItemIds.ONYX_SWORD_DEFAULT).getInt(
                     ItemIds.ONYX_SWORD_DEFAULT);
 
-        } catch (Exception e)
+        }
+        catch (Exception e)
         {
             FMLLog.log(Level.SEVERE, e, Reference.MOD_NAME
                     + " has had a problem loading its configuration");
-        } finally
+        }
+        finally
         {
             configuration.save();
         }

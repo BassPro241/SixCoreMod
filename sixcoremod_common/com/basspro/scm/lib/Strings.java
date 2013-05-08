@@ -23,6 +23,7 @@ public class Strings
     public static final String BRONZE_BLOCK_NAME = "bronzeBlock";
     public static final String PLATINUM_BLOCK_NAME = "platinumBlock";
     public static final String DUST_BLOCK_NAME = "dustBlock";
+    public static final String PANDORAPORTAL_NAME = "pandoraPortal";
 
     /* Item name constants */
     public static final String PORK_SANDWICH_NAME = "porkSandwich";

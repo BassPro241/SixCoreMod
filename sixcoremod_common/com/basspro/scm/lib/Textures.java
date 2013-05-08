@@ -34,6 +34,8 @@ public class Textures
     
     public static final String BLOCK_DUST_BLOCK = BLOCK_TEXTURE_LOCATION + "dustBlock.png";
     
+    public static final String BLOCK_PANDORAPORTAL_BLOCK = BLOCK_TEXTURE_LOCATION + "pandoraPortal.png";
+    
 
     // Item Textures
     public static final String ITEM_PORK_SANDWICH = ITEM_TEXTURE_LOCATION

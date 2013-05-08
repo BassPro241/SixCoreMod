@@ -24,21 +24,6 @@ import net.minecraft.world.ColorizerFoliage;
 import net.minecraft.world.ColorizerGrass;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.BiomeDecorator;
-import net.minecraft.world.biome.BiomeGenBase;
-import net.minecraft.world.biome.BiomeGenBeach;
-import net.minecraft.world.biome.BiomeGenDesert;
-import net.minecraft.world.biome.BiomeGenEnd;
-import net.minecraft.world.biome.BiomeGenForest;
-import net.minecraft.world.biome.BiomeGenHell;
-import net.minecraft.world.biome.BiomeGenHills;
-import net.minecraft.world.biome.BiomeGenJungle;
-import net.minecraft.world.biome.BiomeGenMushroomIsland;
-import net.minecraft.world.biome.BiomeGenOcean;
-import net.minecraft.world.biome.BiomeGenPlains;
-import net.minecraft.world.biome.BiomeGenRiver;
-import net.minecraft.world.biome.BiomeGenSnow;
-import net.minecraft.world.biome.BiomeGenSwamp;
-import net.minecraft.world.biome.BiomeGenTaiga;
 import net.minecraft.world.biome.SpawnListEntry;
 import net.minecraft.world.gen.feature.WorldGenBigTree;
 import net.minecraft.world.gen.feature.WorldGenForest;
@@ -48,6 +33,9 @@ import net.minecraft.world.gen.feature.WorldGenTrees;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.terraingen.BiomeEvent;
+
+import com.basspro.scm.event.terraingen.BiomeEventPandora;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -82,7 +70,7 @@ public abstract class BiomeGenBasePandora
     public int waterColorMultiplier;
 
     /** The biome decorator. */
-    public BiomeDecorator theBiomeDecorator;
+    public BiomePandoraDecorator theBiomeDecorator;
 
     /**
      * Holds the classes of IMobs (hostile mobs) that can be spawned in the biome.
@@ -162,9 +150,9 @@ public abstract class BiomeGenBasePandora
     /**
      * Allocate a new BiomeDecorator for this BiomeGenBase
      */
-    public BiomeDecorator createBiomeDecorator()
+    public BiomePandoraDecorator createBiomeDecorator()
     {   
-        return getModdedBiomeDecorator(new BiomeDecoratorPandora(this));
+        return getModdedBiomeDecorator(new BiomePandoraDecorator(this));
     }
 
     /**
@@ -371,9 +359,9 @@ public abstract class BiomeGenBasePandora
         return getModdedBiomeFoliageColor(ColorizerFoliage.getFoliageColor(d0, d1));
     }
 
-    public BiomeDecorator getModdedBiomeDecorator(BiomeDecorator original)
+    public BiomePandoraDecorator getModdedBiomeDecorator(BiomePandoraDecorator original)
     {
-        BiomeEvent.CreateDecorator event = new BiomeEvent.CreateDecorator(this, original);
+        BiomeEventPandora.CreateDecorator event = new BiomeEventPandora.CreateDecorator(this, original);
         MinecraftForge.TERRAIN_GEN_BUS.post(event);
         return event.newBiomeDecorator;
     }
@@ -381,7 +369,7 @@ public abstract class BiomeGenBasePandora
     @SideOnly(Side.CLIENT)
     public int getWaterColorMultiplier()
     {
-        BiomeEvent.GetWaterColor event = new BiomeEvent.GetWaterColor(this, waterColorMultiplier);
+        BiomeEventPandora.GetWaterColor event = new BiomeEventPandora.GetWaterColor(this, waterColorMultiplier);
         MinecraftForge.EVENT_BUS.post(event);
         return event.newColor;
     }
@@ -389,7 +377,7 @@ public abstract class BiomeGenBasePandora
     @SideOnly(Side.CLIENT)
     public int getModdedBiomeGrassColor(int original)
     {
-        BiomeEvent.GetGrassColor event = new BiomeEvent.GetGrassColor(this, original);
+        BiomeEventPandora.GetGrassColor event = new BiomeEventPandora.GetGrassColor(this, original);
         MinecraftForge.EVENT_BUS.post(event);
         return event.newColor;
     }
@@ -398,7 +386,7 @@ public abstract class BiomeGenBasePandora
     @SideOnly(Side.CLIENT)
     public int getModdedBiomeFoliageColor(int original)
     {
-        BiomeEvent.GetFoliageColor event = new BiomeEvent.GetFoliageColor(this, original);
+        BiomeEventPandora.GetFoliageColor event = new BiomeEventPandora.GetFoliageColor(this, original);
         MinecraftForge.EVENT_BUS.post(event);
         return event.newColor;
     }

@@ -1,6 +1,7 @@
 package com.basspro.scm.block;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockPortal;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.common.MinecraftForge;
 
@@ -34,6 +35,9 @@ public class SixCoreModBlocks
     // Terrain Blocks
     public static Block blockDust;
     public static Block blockStoneMossy;
+    
+    // Portal Block
+    public static BlockPortal pandoraPortal;
 
     public static void init()
     {
@@ -52,6 +56,8 @@ public class SixCoreModBlocks
         platinumBlock = new BlockOreMetal(BlockIds.PLATINUM_BLOCK, Material.iron).setUnlocalizedName("platinumBlock");
         
         blockDust = new BlockDust(BlockIds.DUST_BLOCK, Material.sand).setUnlocalizedName("dustBlock");
+        
+        pandoraPortal = (BlockPandoraPortal)new BlockPandoraPortal(BlockIds.PANDORAPORTAL_BLOCK).setUnlocalizedName("pandoraPortal");
 
         GameRegistry.registerBlock(oreOnyx, Strings.ONYX_ORE_NAME);
         GameRegistry.registerBlock(oreEridium, Strings.ERIDIUM_ORE_NAME);
@@ -66,6 +72,9 @@ public class SixCoreModBlocks
         GameRegistry.registerBlock(platinumBlock, Strings.PLATINUM_BLOCK_NAME);
         
         GameRegistry.registerBlock(blockDust, Strings.DUST_BLOCK_NAME);
+        
+
+        GameRegistry.registerBlock(pandoraPortal, Strings.PANDORAPORTAL_NAME);
 
         MinecraftForge.setBlockHarvestLevel(oreOnyx, "pickaxe", 2);
         MinecraftForge.setBlockHarvestLevel(oreEridium, "pickaxe", 2);
@@ -77,6 +86,7 @@ public class SixCoreModBlocks
         MinecraftForge.setBlockHarvestLevel(sapphireBlock, "pickaxe", 2);
         MinecraftForge.setBlockHarvestLevel(bronzeBlock, "pickaxe", 2);
         MinecraftForge.setBlockHarvestLevel(platinumBlock, "pickaxe", 2);
+        MinecraftForge.setBlockHarvestLevel((pandoraPortal), null , 0);
 
     }
 

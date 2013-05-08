@@ -19,6 +19,8 @@ public class BlockIds
     public static int PLATINUM_BLOCK_DEFAULT = 3012;
     
     public static int DUST_BLOCK_DEFAULT = 3020;
+    
+    public static int PANDORAPORTAL_BLOCK_DEFAULT = 3040;
 
     /* Current block ID's */
     public static int ONYX_ORE;
@@ -37,4 +39,6 @@ public class BlockIds
     public static int PLATINUM_BLOCK;
     
     public static int DUST_BLOCK;
+    
+    public static int PANDORAPORTAL_BLOCK;
 }
