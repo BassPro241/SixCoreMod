@@ -50,5 +50,8 @@ public class Strings
     
     /* Enchantment Constants */
     public static final String CORROSION_ASPECT_NAME = "corrosion";
+    
+    /* Biome Constants */
+    public static final String HIGHLANDS_BIOME_NAME = "highlands";
 
 }
