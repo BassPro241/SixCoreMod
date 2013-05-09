@@ -10,4 +10,7 @@ public abstract class GenLayerPandora extends GenLayer
     }
     
     public GenLayer[] makeTheWorld(long par1)
+    {
+        
+    }
 }
