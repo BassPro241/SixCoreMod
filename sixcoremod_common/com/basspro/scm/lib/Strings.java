@@ -52,6 +52,7 @@ public class Strings
     public static final String CORROSION_ASPECT_NAME = "corrosion";
     
     /* Biome Constants */
+    public static final String PANDORA_BIOME_NAME = "pandoraBiome";
     public static final String HIGHLANDS_BIOME_NAME = "highlands";
 
 }
