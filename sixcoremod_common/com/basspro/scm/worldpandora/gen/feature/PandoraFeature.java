@@ -2,6 +2,7 @@ package com.basspro.scm.worldpandora.gen.feature;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.entity.monster.EntitySpider;
@@ -9,6 +10,7 @@ import net.minecraft.entity.monster.EntityZombie;
 import net.minecraft.entity.passive.EntityBat;
 import net.minecraft.util.ChunkCoordinates;
 import net.minecraft.world.World;
+import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.biome.SpawnListEntry;
 
 import com.basspro.scm.worldpandora.WorldSCM;
@@ -100,14 +102,15 @@ public class PandoraFeature
             World world)
     {
         if ((world != null)
-                && ((world.getWorldChunkManager() instanceof PandoraWorldChunkManager)))
+                && ((world.getWorldChunkManager() instanceof WorldChunkManagerPandora)))
         {
-            WorldChunkManagerPandora pandoraManager = (PandoraWorldChunkManager) world
+            WorldChunkManagerPandora pandoraManager = (WorldChunkManagerPandora) world
                     .getWorldChunkManager();
 
             if (pandoraManager.isInFeatureChunk(chunkX << 4, chunkZ << 4))
             {
-                return pandoraManager.getFeatureAt(chunkX << 4, chunkZ << 4, world);
+                return pandoraManager.getFeatureAt(chunkX << 4, chunkZ << 4,
+                        world);
             }
 
             return nothing;
@@ -116,8 +119,33 @@ public class PandoraFeature
         return nothing;
     }
 
-    public static PandoraFeature generateFeaturePreset5x5(int chunkX, int chunkZ,
+    public static PandoraFeature generateFeatureFor(int chunkX, int chunkZ,
             World world)
+    {
+        BiomeGenBase biomeAt = world.getBiomeGenForCoords((chunkX << 4) + 8,
+                (chunkZ << 4) + 8);
+
+        Random hillRNG = new Random(world.getSeed() + chunkX * 25117 + chunkZ
+                * 151121);
+        int randnum = hillRNG.nextInt(16);
+
+        switch (randnum)
+        {
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            default:
+                return hill1;
+
+        }
+    }
+
+    public static PandoraFeature generateFeaturePreset5x5(int chunkX,
+            int chunkZ, World world)
     {
         int cf = 16;
 
@@ -142,8 +170,8 @@ public class PandoraFeature
         return nothing;
     }
 
-    public static PandoraFeature generateFeaturePreset6x6(int chunkX, int chunkZ,
-            World world)
+    public static PandoraFeature generateFeaturePreset6x6(int chunkX,
+            int chunkZ, World world)
     {
         int cf = 16;
 
@@ -177,8 +205,8 @@ public class PandoraFeature
             {
                 for (int z = -rad; z <= rad; z++)
                 {
-                    PandoraFeature directlyAt = getFeatureDirectlyAt(x + cx, z + cz,
-                            world);
+                    PandoraFeature directlyAt = getFeatureDirectlyAt(x + cx, z
+                            + cz, world);
                     if (directlyAt.size == rad)
                     {
                         return directlyAt;
@@ -199,8 +227,8 @@ public class PandoraFeature
             {
                 for (int z = -rad; z <= rad; z++)
                 {
-                    PandoraFeature directlyAt = getFeatureDirectlyAt(x + chunkX, z
-                            + chunkZ, world);
+                    PandoraFeature directlyAt = getFeatureDirectlyAt(
+                            x + chunkX, z + chunkZ, world);
                     if (directlyAt != nothing)
                     {
                         return directlyAt;

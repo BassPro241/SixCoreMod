@@ -53,6 +53,10 @@ public class Strings
     
     /* Biome Constants */
     public static final String PANDORA_BIOME_NAME = "pandoraBiome";
+    public static final String PANDORA_BIOME_2_NAME = "pandoraBiome2";
     public static final String HIGHLANDS_BIOME_NAME = "highlands";
+    public static final String THEDUST_BIOME_NAME = "theDust";
+    public static final String MAJOR_FEATURE_NAME = "majorFeature";
+    public static final String MINOR_FEATURE_NAME = "minorFeature";
 
 }

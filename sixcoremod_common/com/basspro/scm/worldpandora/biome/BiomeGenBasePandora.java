@@ -2,6 +2,10 @@ package com.basspro.scm.worldpandora.biome;
 
 import java.util.Random;
 
+import twilightforest.TwilightForestMod;
+import twilightforest.biomes.TFBiomeCenter;
+import twilightforest.biomes.TFBiomeCenter2;
+
 import net.minecraft.block.Block;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.ColorizerFoliage;
@@ -21,10 +25,24 @@ import cpw.mods.fml.relauncher.SideOnly;
 public class BiomeGenBasePandora extends BiomeGenBase
 {
 
-    public static final BiomeGenBase pandora = new PandoraBiomePandora(BiomeIds.PANDORA_BIOME).setColor(21760).setBiomeName(Strings.PANDORA_BIOME_NAME);
+    public static final BiomeGenBase pandora = new PandoraBiomePandora(
+            BiomeIds.PANDORA_BIOME).setColor(21760).setBiomeName(
+            Strings.PANDORA_BIOME_NAME);
+    public static final BiomeGenBase pandora2 = new PandoraBiomePandoraVariant(
+            BiomeIds.PANDORA_BIOME_2).setColor(21760).setBiomeName(
+            Strings.PANDORA_BIOME_2_NAME);
     public static final BiomeGenBase highlands = new PandoraBiomeHighlands(
             BiomeIds.HIGHLANDS_BIOME).setColor(5596740).setBiomeName(
             Strings.HIGHLANDS_BIOME_NAME);
+    public static final BiomeGenBase theDust = new PandoraBiomeTheDust(
+            BiomeIds.THEDUST_BIOME).setColor(4382397).setBiomeName(
+            Strings.THEDUST_BIOME_NAME);
+    public static final BiomeGenBase majorFeature = new PandoraBiomeCenter(
+            BiomeIds.MAJOR_FEATURE).setColor(16711680).setBiomeName(
+            Strings.MAJOR_FEATURE_NAME);
+    public static final BiomeGenBase minorFeature = new PandoraBiomeCenter2(
+            BiomeIds.MINOR_FEATURE).setColor(11184640).setBiomeName(
+            Strings.MINOR_FEATURE_NAME);
 
     public BiomeGenBasePandora(int par1)
     {
@@ -79,6 +97,12 @@ public class BiomeGenBasePandora extends BiomeGenBase
         }
 
         return new WorldGenTallGrass(Block.tallGrass.blockID, 1);
+    }
+
+    public static boolean isFeature(int idToCheck)
+    {
+        return (idToCheck == majorFeature.biomeID)
+                || (idToCheck == minorFeature.biomeID);
     }
 
     @SideOnly(Side.CLIENT)

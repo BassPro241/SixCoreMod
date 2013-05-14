@@ -1,5 +1,8 @@
 package com.basspro.scm.worldpandora.biome;
 
+import java.util.Random;
+
+import net.minecraft.world.World;
 import net.minecraft.world.biome.BiomeDecorator;
 import net.minecraft.world.biome.BiomeGenBase;
 
@@ -10,6 +13,17 @@ public class BiomePandoraDecorator extends BiomeDecorator
     {
         super(par1BiomeGenBase);
 
+    }
+
+    public void decorateOnlyOres(World world, Random rand, int mapX, int mapZ)
+    {
+        this.currentWorld = world;
+        this.randomGenerator = rand;
+        this.chunk_X = mapX;
+        this.chunk_Z = mapZ;
+        generateOres();
+        this.currentWorld = null;
+        this.randomGenerator = null;
     }
 
     public void setTreesPerChunk(int treesPerChunk)
