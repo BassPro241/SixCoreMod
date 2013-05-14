@@ -51,6 +51,11 @@ public class Strings
     /* Enchantment Constants */
     public static final String CORROSION_ASPECT_NAME = "corrosion";
     
+    /* World Constants */
+    public static String PANDORA_SEED_DEFAULT = "pandoraSeed";
+    
+    public static String PANDORA_SEED;
+    
     /* Biome Constants */
     public static final String PANDORA_BIOME_NAME = "pandoraBiome";
     public static final String PANDORA_BIOME_2_NAME = "pandoraBiome2";

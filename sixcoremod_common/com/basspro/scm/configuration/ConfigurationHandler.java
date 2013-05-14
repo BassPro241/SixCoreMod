@@ -121,6 +121,8 @@ public class ConfigurationHandler
             ItemIds.ONYX_SWORD = configuration.getItem(Strings.ONYX_SWORD_NAME,
                     ItemIds.ONYX_SWORD_DEFAULT).getInt(
                     ItemIds.ONYX_SWORD_DEFAULT);
+            
+            Strings.PANDORA_SEED = configuration.get("general", Strings.PANDORA_SEED_DEFAULT, "").getString();
 
         }
         catch (Exception e)

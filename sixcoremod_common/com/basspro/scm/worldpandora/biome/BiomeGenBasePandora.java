@@ -2,10 +2,6 @@ package com.basspro.scm.worldpandora.biome;
 
 import java.util.Random;
 
-import twilightforest.TwilightForestMod;
-import twilightforest.biomes.TFBiomeCenter;
-import twilightforest.biomes.TFBiomeCenter2;
-
 import net.minecraft.block.Block;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.ColorizerFoliage;
