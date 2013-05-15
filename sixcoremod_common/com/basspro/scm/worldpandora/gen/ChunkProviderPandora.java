@@ -1,15 +1,22 @@
 package com.basspro.scm.worldpandora.gen;
 
+import java.util.List;
 import java.util.Random;
 
 import net.minecraft.block.Block;
+import net.minecraft.entity.EnumCreatureType;
+import net.minecraft.util.IProgressUpdate;
 import net.minecraft.util.MathHelper;
+import net.minecraft.world.ChunkPosition;
+import net.minecraft.world.SpawnerAnimals;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.chunk.Chunk;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.chunk.storage.ExtendedBlockStorage;
 import net.minecraft.world.gen.NoiseGeneratorOctaves;
+import net.minecraft.world.gen.feature.WorldGenDungeons;
+import net.minecraft.world.gen.feature.WorldGenLakes;
 
 import com.basspro.scm.worldpandora.WorldSCM;
 import com.basspro.scm.worldpandora.biome.BiomeGenBasePandora;
@@ -39,13 +46,14 @@ public abstract class ChunkProviderPandora implements IChunkProvider
     double[] noise6;
     float[] parabolicField;
     int[][] field_73219_j = new int[32][32];
+    private MapGenPandoraMajorFeature majorFeatureGenerator;
 
     public ChunkProviderPandora(World par1World, long par2, boolean par4)
     {
         this.stoneNoise = new double[256];
         this.caveGenerator = new PandoraGenCaves();
 
-        // this.majorFeatureGenerator = new MapGenTFMajorFeature();
+        // this.majorFeatureGenerator = new MapGenPandoraMajorFeature();
 
         this.ravineGenerator = new PandoraGenRavine();
         this.field_73219_j = new int[32][32];
@@ -115,7 +123,7 @@ public abstract class ChunkProviderPandora implements IChunkProvider
                         {
                             int l1 = k1 + k * 4 << 11 | 0 + l * 4 << 7 | i1 * 8
                                     + j1;
-                            char c = '';
+                            char c = 'a';
                             l1 -= c;
                             double d14 = 0.25D;
                             double d15 = d10;
@@ -124,7 +132,8 @@ public abstract class ChunkProviderPandora implements IChunkProvider
 
                             for (int i2 = 0; i2 < 4; i2++)
                             {
-                                if (d15 += d16 > 0.0D)
+
+                                if ((d15 += d16) > 0.0D)
                                 {
                                     int tmp516_515 = (l1 + c);
                                     l1 = tmp516_515;
@@ -279,7 +288,7 @@ public abstract class ChunkProviderPandora implements IChunkProvider
 
         byte[] fake = new byte[0];
 
-        this.replaceBlocksForBiome(par1, par2, metaStorage,
+        this.replaceBlocksForBiome(par1, par2, blockStorage,
                 this.biomesForGeneration);
         this.caveGenerator.generate(this, this.worldObj, par1, par2,
                 metaStorage);
@@ -497,5 +506,167 @@ public abstract class ChunkProviderPandora implements IChunkProvider
             metaStorage[1] = featureHighNibble;
             metaStorage[2] = 1;
         }
+    }
+
+    public boolean chunkExists(int i, int j)
+    {
+        return true;
+    }
+
+    public void populate(IChunkProvider ichunkprovider, int chunkX, int chunkZ)
+    {
+        net.minecraft.block.BlockSand.fallInstantly = true;
+        int mapX = chunkX * 16;
+        int mapY = chunkZ * 16;
+        BiomeGenBase biomegenbase = this.worldObj.getBiomeGenForCoords(
+                mapX + 16, mapY + 16);
+
+        if ((biomegenbase == BiomeGenBasePandora.majorFeature)
+                || (biomegenbase == BiomeGenBasePandora.minorFeature))
+        {
+            biomegenbase = this.worldObj.getBiomeGenForCoords(mapX + 17,
+                    mapY + 17);
+        }
+        this.rand.setSeed(this.worldObj.getSeed());
+        long l1 = this.rand.nextLong() / 2L * 2L + 1L;
+        long l2 = this.rand.nextLong() / 2L * 2L + 1L;
+        this.rand.setSeed(chunkX * l1 + chunkZ * l2 ^ this.worldObj.getSeed());
+        boolean disableFeatures = false;
+
+        disableFeatures |= this.majorFeatureGenerator
+                .generateStructuresInChunk(this.worldObj, this.rand, chunkX,
+                        chunkZ);
+
+        disableFeatures |= !PandoraFeature.getNearestFeature(chunkX, chunkZ,
+                this.worldObj).chunkDecorationsEnabled;
+
+        if ((!disableFeatures) && (this.rand.nextInt(4) == 0))
+        {
+            int i1 = mapX + this.rand.nextInt(16) + 8;
+            int i2 = this.rand.nextInt(WorldSCM.WORLDHEIGHT);
+            int i3 = mapY + this.rand.nextInt(16) + 8;
+            new WorldGenLakes(Block.waterStill.blockID).generate(this.worldObj,
+                    this.rand, i1, i2, i3);
+        }
+        if ((!disableFeatures) && (this.rand.nextInt(32) == 0))
+        {
+            int j1 = mapX + this.rand.nextInt(16) + 8;
+            int j2 = this.rand.nextInt(this.rand
+                    .nextInt(WorldSCM.WORLDHEIGHT - 8) + 8);
+            int j3 = mapY + this.rand.nextInt(16) + 8;
+            if ((j2 < WorldSCM.SEALEVEL) || (this.rand.nextInt(10) == 0))
+            {
+                new WorldGenLakes(Block.lavaStill.blockID).generate(
+                        this.worldObj, this.rand, j1, j2, j3);
+            }
+        }
+        for (int k1 = 0; k1 < 8; k1++)
+        {
+            int k2 = mapX + this.rand.nextInt(16) + 8;
+            int k3 = this.rand.nextInt(WorldSCM.WORLDHEIGHT);
+            int l3 = mapY + this.rand.nextInt(16) + 8;
+            if (new WorldGenDungeons().generate(this.worldObj, this.rand, k2,
+                    k3, l3))
+                ;
+        }
+        biomegenbase.decorate(this.worldObj, this.rand, mapX, mapY);
+        SpawnerAnimals.performWorldGenSpawning(this.worldObj, biomegenbase,
+                mapX + 8, mapY + 8, 16, 16, this.rand);
+        mapX += 8;
+        mapY += 8;
+        for (int i2 = 0; i2 < 16; i2++)
+        {
+            for (int j3 = 0; j3 < 16; j3++)
+            {
+                int j4 = this.worldObj.getPrecipitationHeight(mapX + i2, mapY
+                        + j3);
+                if (this.worldObj
+                        .isBlockFreezable(i2 + mapX, j4 - 1, j3 + mapY))
+                {
+                    this.worldObj.setBlock(i2 + mapX, j4 - 1, j3 + mapY,
+                            Block.ice.blockID, 0, 2);
+                }
+                if (this.worldObj.canSnowAt(i2 + mapX, j4, j3 + mapY))
+                {
+                    this.worldObj.setBlock(i2 + mapX, j4, j3 + mapY,
+                            Block.snow.blockID, 0, 2);
+                }
+            }
+        }
+
+        net.minecraft.block.BlockSand.fallInstantly = false;
+    }
+
+    public boolean saveChunks(boolean flag, IProgressUpdate iprogressupdate)
+    {
+        return true;
+    }
+
+    public boolean canSave()
+    {
+        return true;
+    }
+
+    public String makeString()
+    {
+        return "PandoraLevelSource";
+    }
+
+    public List getPossibleCreatures(EnumCreatureType creatureType, int mapX,
+            int mapY, int mapZ)
+    {
+        PandoraFeature nearestFeature = PandoraFeature.getNearestFeatureIncludeMore(
+                mapX >> 4, mapZ >> 4, this.worldObj);
+
+        if (nearestFeature != PandoraFeature.nothing)
+        {
+            int spawnListIndex = this.majorFeatureGenerator
+                    .getSpawnListIndexAt(mapX, mapY, mapZ);
+
+            if (spawnListIndex >= 0)
+            {
+                return nearestFeature.getSpawnableList(creatureType,
+                        spawnListIndex);
+            }
+
+        }
+
+        if ((mapY < WorldSCM.SEALEVEL)
+                && (creatureType == EnumCreatureType.monster))
+        {
+            return PandoraFeature.underground.getSpawnableList(creatureType);
+        }
+
+        BiomeGenBase biomegenbase = this.worldObj.getBiomeGenForCoords(mapX,
+                mapZ);
+
+        if (biomegenbase == null)
+        {
+            return null;
+        }
+
+        return biomegenbase.getSpawnableList(creatureType);
+    }
+
+    public ChunkPosition findClosestStructure(World par1World, String par2Str,
+            int par3, int par4, int par5)
+    {
+        return null;
+    }
+
+    public int getLoadedChunkCount()
+    {
+        return 0;
+    }
+
+    public void recreateStructures(int var1, int var2)
+    {
+        this.majorFeatureGenerator.generate(this, this.worldObj, var1, var2,
+                (byte[]) null);
+    }
+
+    public boolean unloadQueuedChunks()
+    {
+        return false;
     }
 }

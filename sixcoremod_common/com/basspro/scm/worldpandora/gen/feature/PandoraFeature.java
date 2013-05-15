@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import twilightforest.TFFeature;
+
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.entity.monster.EntitySpider;
 import net.minecraft.entity.monster.EntityZombie;
@@ -25,6 +27,9 @@ public class PandoraFeature
 
     public static final PandoraFeature nothing = new PandoraFeature(0, 0,
             "No Feature").enableDecorations().disableStructure();
+
+    public static final PandoraFeature underground = new PandoraFeature(255, 0,
+            "Underground");
 
     ArrayList emptyList = new ArrayList();
     public int featureID;
