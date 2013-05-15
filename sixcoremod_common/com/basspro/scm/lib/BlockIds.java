@@ -18,7 +18,7 @@ public class BlockIds
     public static int SILVER_BLOCK_DEFAULT = 3011;
     public static int PLATINUM_BLOCK_DEFAULT = 3012;
     
-    public static int DUST_BLOCK_DEFAULT = 3020;
+    public static int DUST_BLOCK_DEFAULT = 200;
     
     public static int PANDORAPORTAL_BLOCK_DEFAULT = 3040;
 

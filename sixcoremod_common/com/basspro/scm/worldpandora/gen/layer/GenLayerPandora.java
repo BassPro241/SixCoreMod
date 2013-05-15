@@ -11,7 +11,7 @@ public abstract class GenLayerPandora extends GenLayer
         super(par1);
     }
 
-    public GenLayer[] makeTheWorld(long par1)
+    public static GenLayer[] makeTheWorld(long par1)
     {
         byte zoomFactor = 4;
 
