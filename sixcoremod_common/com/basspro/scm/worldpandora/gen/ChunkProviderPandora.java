@@ -154,7 +154,7 @@ public abstract class ChunkProviderPandora implements IChunkProvider
                             }
 
                             d10 += d12;
-                            tmp549_548 += d13;
+                            d11 += d13;
                         }
 
                         d1 += d5;

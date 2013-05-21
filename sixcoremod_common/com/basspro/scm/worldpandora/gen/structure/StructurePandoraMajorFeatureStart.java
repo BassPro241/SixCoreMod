@@ -95,7 +95,7 @@ public class StructurePandoraMajorFeatureStart extends StructureStart
             {
                 this.boundingBox.offset(0, offY, 0);
 
-                for (StructureComponent com : getComponents())
+                for (StructureComponent com : this.getComponents())
                 {
                     com.getBoundingBox().offset(0, offY, 0);
                 }
